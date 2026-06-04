@@ -1,17 +1,15 @@
-# DataGol 2026 — Producción portable v1.1
+# DataGol 2026 v2.0 — Producción congelada
 
-Corrección de despliegue para Streamlit Cloud.
+Modelo público: Dixon-Coles completo penalizado.
 
-## Motivo
+## Decisión científica
+El ensamble experimental se mantuvo como comparador, pero no se publica porque su ventaja mundialista frente a Poisson/Dixon-Coles no fue estadísticamente concluyente en bootstrap pareado. La versión pública privilegia parsimonia, coherencia entre 1X2 y marcador exacto, y reproducibilidad.
 
-El modelo Gradient Boosting fue entrenado y evaluado, pero recibió peso 0 % en el
-ensamble final. La versión anterior intentaba cargar innecesariamente su archivo
-`joblib`, lo que podía provocar incompatibilidad de módulos entre el entorno de
-entrenamiento y Streamlit Cloud.
+## Validación
+- Base pública auditada.
+- 192 partidos mundialistas curados a 90 minutos: Brasil 2014, Rusia 2018 y Catar 2022.
+- Aplicación de inferencia congelada: no reentrena en Streamlit.
+- Estado: APPROVED_FOR_FROZEN_PUBLIC_INFERENCE.
 
-## Solución
-
-- Se elimina la carga de Gradient Boosting durante inferencia.
-- La regresión logística seleccionada se exporta a JSON portable.
-- La aplicación ya no depende de `joblib` ni de `scikit-learn` en producción.
-- Las métricas de validación se conservan sin cambios.
+## Despliegue
+Suba todos los archivos y carpetas a la raíz del repositorio GitHub y utilice `app.py` como archivo principal en Streamlit.
