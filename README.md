@@ -1,42 +1,33 @@
-# DataGol 2026 — Versión final con tres modelos matemáticos
+# DataGol 2026 — Producción congelada v1
 
-## Modelos
+Aplicación Streamlit de inferencia para el predictor probabilístico validado.
 
-1. Poisson independiente para goles y marcadores exactos.
-2. Dixon-Coles para corregir resultados bajos.
-3. Regresión logística multinomial para victoria, empate y derrota.
+## Principio de producción
 
-## Ensamble
+La aplicación **no entrena ni calibra modelos al abrirse**. Carga artefactos congelados:
 
-Los tres modelos se combinan con pesos obtenidos mediante validación temporal y Brier Score.
+- `models/dixon_coles.json`
+- `models/elo_logit.joblib`
+- `models/gradient_boosting.joblib`
+- `models/inference_state.json`
+- `models/production_metadata.json`
 
-## Qué muestra la aplicación
+## Modelo publicado
 
-- goles esperados;
-- victoria, empate y derrota;
-- marcador modal;
-- cinco marcadores más probables;
-- comparación de modelos;
-- margen de error;
-- Brier Score;
-- exactitud 1X2;
-- factores prepartido;
-- fuente y fecha del último partido disponible.
+Las probabilidades 1X2 utilizan el ensamble validado:
 
-## Actualización de GitHub
+- Dixon-Coles completo: 79,21 %
+- Elo + logística multinomial: 20,79 %
+- Gradient Boosting calibrado: 0 %
 
-Reemplace estos archivos:
-- `app.py`
-- `requirements.txt`
+Gradient Boosting permanece visible para auditoría, pero el optimizador lo excluyó del ensamble porque no mejoró la calibración.
 
-Cargue `partidos_recientes_plantilla.csv` únicamente cuando disponga de resultados verificados.
+Los marcadores exactos provienen de Dixon-Coles.
 
-## Validación temporal estricta
+## Publicación en Streamlit
 
-La versión final separa cronológicamente los datos en:
-- entrenamiento;
-- calibración;
-- prueba final independiente.
+Suba todos los archivos y carpetas de este paquete a un repositorio GitHub y seleccione `app.py` como archivo principal.
 
-El parámetro Dixon-Coles y los pesos del ensamble se seleccionan con el bloque de calibración.
-Las métricas visibles se calculan únicamente con el bloque posterior de prueba.
+## Fuente del calendario
+
+`data/worldcup_2026_group_stage.csv` es una captura pública estructurada del calendario de fase de grupos. Antes de una publicación institucional debe contrastarse con la programación oficial FIFA.
