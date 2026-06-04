@@ -1,0 +1,2544 @@
+{
+  "global_avg_goals_per_team": 1.3402559336574207,
+  "cutoff": "2026-06-03",
+  "teams": {
+    "Abkhazia": {
+      "elo": 1501.760061646744,
+      "n_matches": 7,
+      "last_date": "2017-08-31",
+      "gf10": 1.0,
+      "ga10": 0.8571428571428571,
+      "points10": 1.5714285714285714,
+      "goal_diff10": 0.14285714285714285
+    },
+    "Afghanistan": {
+      "elo": 1382.525071512604,
+      "n_matches": 80,
+      "last_date": "2025-10-14",
+      "gf10": 0.5,
+      "ga10": 1.3,
+      "points10": 0.6,
+      "goal_diff10": -0.8
+    },
+    "Albania": {
+      "elo": 1526.1669068654553,
+      "n_matches": 168,
+      "last_date": "2026-06-03",
+      "gf10": 1.0,
+      "ga10": 0.9,
+      "points10": 1.6,
+      "goal_diff10": 0.1
+    },
+    "Alderney": {
+      "elo": 1486.222632828734,
+      "n_matches": 2,
+      "last_date": "2015-05-31",
+      "gf10": 1.0,
+      "ga10": 5.5,
+      "points10": 0.0,
+      "goal_diff10": -4.5
+    },
+    "Algeria": {
+      "elo": 1774.9936935293886,
+      "n_matches": 175,
+      "last_date": "2026-06-03",
+      "gf10": 2.4,
+      "ga10": 0.7,
+      "points10": 2.3,
+      "goal_diff10": 1.7
+    },
+    "Ambazonia": {
+      "elo": 1493.448,
+      "n_matches": 1,
+      "last_date": "2007-06-07",
+      "gf10": 1.0,
+      "ga10": 3.0,
+      "points10": 0.0,
+      "goal_diff10": -2.0
+    },
+    "American Samoa": {
+      "elo": 1498.6937864459387,
+      "n_matches": 8,
+      "last_date": "2024-09-06",
+      "gf10": 1.125,
+      "ga10": 1.875,
+      "points10": 1.25,
+      "goal_diff10": -0.75
+    },
+    "Andalusia": {
+      "elo": 1513.2870496554365,
+      "n_matches": 2,
+      "last_date": "2013-06-07",
+      "gf10": 3.0,
+      "ga10": 1.0,
+      "points10": 3.0,
+      "goal_diff10": 2.0
+    },
+    "Andorra": {
+      "elo": 1134.8021071448393,
+      "n_matches": 141,
+      "last_date": "2026-05-29",
+      "gf10": 0.3,
+      "ga10": 1.8,
+      "points10": 0.3,
+      "goal_diff10": -1.5
+    },
+    "Angola": {
+      "elo": 1530.434553091153,
+      "n_matches": 156,
+      "last_date": "2025-11-18",
+      "gf10": 1.1,
+      "ga10": 1.2,
+      "points10": 1.1,
+      "goal_diff10": -0.1
+    },
+    "Anguilla": {
+      "elo": 1229.8788577944238,
+      "n_matches": 41,
+      "last_date": "2025-06-07",
+      "gf10": 0.2,
+      "ga10": 4.4,
+      "points10": 0.1,
+      "goal_diff10": -4.2
+    },
+    "Antigua and Barbuda": {
+      "elo": 1419.0166992929721,
+      "n_matches": 85,
+      "last_date": "2025-06-10",
+      "gf10": 0.7,
+      "ga10": 2.3,
+      "points10": 0.8,
+      "goal_diff10": -1.6
+    },
+    "Argentina": {
+      "elo": 1834.959280891359,
+      "n_matches": 186,
+      "last_date": "2026-03-31",
+      "gf10": 2.5,
+      "ga10": 0.4,
+      "points10": 2.5,
+      "goal_diff10": 2.1
+    },
+    "Armenia": {
+      "elo": 1384.2928636113043,
+      "n_matches": 149,
+      "last_date": "2026-03-29",
+      "gf10": 1.0,
+      "ga10": 2.9,
+      "points10": 0.7,
+      "goal_diff10": -1.9
+    },
+    "Artsakh": {
+      "elo": 1507.0422392741127,
+      "n_matches": 2,
+      "last_date": "2012-10-21",
+      "gf10": 2.0,
+      "ga10": 0.5,
+      "points10": 2.0,
+      "goal_diff10": 1.5
+    },
+    "Aruba": {
+      "elo": 1387.4242964041161,
+      "n_matches": 34,
+      "last_date": "2025-06-07",
+      "gf10": 0.8,
+      "ga10": 3.2,
+      "points10": 0.8,
+      "goal_diff10": -2.4
+    },
+    "Australia": {
+      "elo": 1762.514526052422,
+      "n_matches": 173,
+      "last_date": "2026-05-30",
+      "gf10": 1.4,
+      "ga10": 1.1,
+      "points10": 1.6,
+      "goal_diff10": 0.3
+    },
+    "Austria": {
+      "elo": 1667.4008731337105,
+      "n_matches": 168,
+      "last_date": "2026-06-01",
+      "gf10": 2.7,
+      "ga10": 0.4,
+      "points10": 2.5,
+      "goal_diff10": 2.3
+    },
+    "Azerbaijan": {
+      "elo": 1325.7540377748653,
+      "n_matches": 173,
+      "last_date": "2025-11-16",
+      "gf10": 0.4,
+      "ga10": 2.3,
+      "points10": 0.2,
+      "goal_diff10": -1.9
+    },
+    "Bahamas": {
+      "elo": 1334.4340183746524,
+      "n_matches": 29,
+      "last_date": "2025-06-07",
+      "gf10": 0.6,
+      "ga10": 3.9,
+      "points10": 0.4,
+      "goal_diff10": -3.3
+    },
+    "Bahrain": {
+      "elo": 1536.2746635887402,
+      "n_matches": 216,
+      "last_date": "2025-11-26",
+      "gf10": 0.6,
+      "ga10": 1.4,
+      "points10": 0.5,
+      "goal_diff10": -0.8
+    },
+    "Bangladesh": {
+      "elo": 1319.698295514238,
+      "n_matches": 106,
+      "last_date": "2026-03-26",
+      "gf10": 1.2,
+      "ga10": 1.3,
+      "points10": 1.3,
+      "goal_diff10": -0.1
+    },
+    "Barawa": {
+      "elo": 1483.1381356665147,
+      "n_matches": 4,
+      "last_date": "2019-05-25",
+      "gf10": 1.75,
+      "ga10": 4.0,
+      "points10": 0.75,
+      "goal_diff10": -2.25
+    },
+    "Barbados": {
+      "elo": 1368.6787521634317,
+      "n_matches": 84,
+      "last_date": "2025-06-10",
+      "gf10": 0.7,
+      "ga10": 2.7,
+      "points10": 0.5,
+      "goal_diff10": -2.0
+    },
+    "Basque Country": {
+      "elo": 1560.2108521153846,
+      "n_matches": 18,
+      "last_date": "2025-11-15",
+      "gf10": 2.7,
+      "ga10": 0.7,
+      "points10": 2.4,
+      "goal_diff10": 2.0
+    },
+    "Belarus": {
+      "elo": 1419.0497501796592,
+      "n_matches": 174,
+      "last_date": "2026-03-29",
+      "gf10": 1.2,
+      "ga10": 2.3,
+      "points10": 1.1,
+      "goal_diff10": -1.1
+    },
+    "Belgium": {
+      "elo": 1813.942650971649,
+      "n_matches": 170,
+      "last_date": "2026-06-02",
+      "gf10": 3.6,
+      "ga10": 0.9,
+      "points10": 2.4,
+      "goal_diff10": 2.7
+    },
+    "Belize": {
+      "elo": 1410.0554745333175,
+      "n_matches": 47,
+      "last_date": "2025-06-07",
+      "gf10": 0.7,
+      "ga10": 2.8,
+      "points10": 0.5,
+      "goal_diff10": -2.1
+    },
+    "Benin": {
+      "elo": 1518.278885780877,
+      "n_matches": 131,
+      "last_date": "2025-11-18",
+      "gf10": 0.9,
+      "ga10": 1.3,
+      "points10": 1.2,
+      "goal_diff10": -0.4
+    },
+    "Bermuda": {
+      "elo": 1421.7521378076929,
+      "n_matches": 68,
+      "last_date": "2026-03-25",
+      "gf10": 1.1,
+      "ga10": 2.8,
+      "points10": 0.7,
+      "goal_diff10": -1.7
+    },
+    "Bhutan": {
+      "elo": 1272.146148858884,
+      "n_matches": 48,
+      "last_date": "2025-11-18",
+      "gf10": 0.5,
+      "ga10": 2.2,
+      "points10": 0.7,
+      "goal_diff10": -1.7
+    },
+    "Bolivia": {
+      "elo": 1533.7674294598169,
+      "n_matches": 161,
+      "last_date": "2026-03-31",
+      "gf10": 0.9,
+      "ga10": 1.3,
+      "points10": 1.3,
+      "goal_diff10": -0.4
+    },
+    "Bonaire": {
+      "elo": 1461.8930185416643,
+      "n_matches": 9,
+      "last_date": "2025-03-25",
+      "gf10": 1.1111111111111112,
+      "ga10": 3.111111111111111,
+      "points10": 1.1111111111111112,
+      "goal_diff10": -2.0
+    },
+    "Bosnia and Herzegovina": {
+      "elo": 1493.0373221450448,
+      "n_matches": 164,
+      "last_date": "2026-05-29",
+      "gf10": 2.1,
+      "ga10": 1.0,
+      "points10": 1.8,
+      "goal_diff10": 1.1
+    },
+    "Botswana": {
+      "elo": 1422.2340346813623,
+      "n_matches": 152,
+      "last_date": "2025-10-14",
+      "gf10": 1.0,
+      "ga10": 1.3,
+      "points10": 1.2,
+      "goal_diff10": -0.3
+    },
+    "Brazil": {
+      "elo": 1829.544290942708,
+      "n_matches": 189,
+      "last_date": "2026-05-31",
+      "gf10": 2.2,
+      "ga10": 0.7,
+      "points10": 2.0,
+      "goal_diff10": 1.5
+    },
+    "British Virgin Islands": {
+      "elo": 1252.4906162843267,
+      "n_matches": 44,
+      "last_date": "2026-06-03",
+      "gf10": 0.3,
+      "ga10": 3.4,
+      "points10": 0.2,
+      "goal_diff10": -3.1
+    },
+    "Brittany": {
+      "elo": 1504.6090853637372,
+      "n_matches": 3,
+      "last_date": "2013-05-28",
+      "gf10": 1.3333333333333333,
+      "ga10": 0.6666666666666666,
+      "points10": 2.0,
+      "goal_diff10": 0.6666666666666666
+    },
+    "Brunei": {
+      "elo": 1278.2219739109864,
+      "n_matches": 56,
+      "last_date": "2025-11-18",
+      "gf10": 0.4,
+      "ga10": 2.4,
+      "points10": 0.7,
+      "goal_diff10": -2.0
+    },
+    "Bulgaria": {
+      "elo": 1403.841088035673,
+      "n_matches": 146,
+      "last_date": "2026-06-01",
+      "gf10": 0.6,
+      "ga10": 2.7,
+      "points10": 0.5,
+      "goal_diff10": -2.1
+    },
+    "Burkina Faso": {
+      "elo": 1639.7312909583816,
+      "n_matches": 170,
+      "last_date": "2026-03-31",
+      "gf10": 2.4,
+      "ga10": 0.6,
+      "points10": 2.3,
+      "goal_diff10": 1.8
+    },
+    "Burundi": {
+      "elo": 1418.9614713680276,
+      "n_matches": 93,
+      "last_date": "2026-05-26",
+      "gf10": 0.6,
+      "ga10": 1.4,
+      "points10": 0.7,
+      "goal_diff10": -0.8
+    },
+    "Cambodia": {
+      "elo": 1292.8036272131674,
+      "n_matches": 119,
+      "last_date": "2025-11-13",
+      "gf10": 1.0,
+      "ga10": 1.5,
+      "points10": 0.8,
+      "goal_diff10": -0.5
+    },
+    "Cameroon": {
+      "elo": 1628.8545442907712,
+      "n_matches": 168,
+      "last_date": "2025-11-13",
+      "gf10": 1.4,
+      "ga10": 0.5,
+      "points10": 1.8,
+      "goal_diff10": 0.9
+    },
+    "Canada": {
+      "elo": 1724.410039102613,
+      "n_matches": 132,
+      "last_date": "2026-06-01",
+      "gf10": 1.2,
+      "ga10": 0.4,
+      "points10": 1.9,
+      "goal_diff10": 0.8
+    },
+    "Canary Islands": {
+      "elo": 1505.958987994312,
+      "n_matches": 1,
+      "last_date": "2007-12-29",
+      "gf10": 2.0,
+      "ga10": 0.0,
+      "points10": 3.0,
+      "goal_diff10": 2.0
+    },
+    "Cape Verde": {
+      "elo": 1579.0379364856014,
+      "n_matches": 125,
+      "last_date": "2026-05-31",
+      "gf10": 2.0,
+      "ga10": 0.6,
+      "points10": 2.4,
+      "goal_diff10": 1.4
+    },
+    "Cascadia": {
+      "elo": 1506.0570396631167,
+      "n_matches": 1,
+      "last_date": "2019-05-25",
+      "gf10": 6.0,
+      "ga10": 3.0,
+      "points10": 3.0,
+      "goal_diff10": 3.0
+    },
+    "Catalonia": {
+      "elo": 1528.7877176797613,
+      "n_matches": 14,
+      "last_date": "2019-03-25",
+      "gf10": 2.1,
+      "ga10": 1.1,
+      "points10": 1.9,
+      "goal_diff10": 1.0
+    },
+    "Cayman Islands": {
+      "elo": 1322.5842546645417,
+      "n_matches": 36,
+      "last_date": "2025-06-07",
+      "gf10": 0.4,
+      "ga10": 2.9,
+      "points10": 0.5,
+      "goal_diff10": -2.5
+    },
+    "Central African Republic": {
+      "elo": 1382.8035976690894,
+      "n_matches": 83,
+      "last_date": "2025-10-12",
+      "gf10": 0.6,
+      "ga10": 2.2,
+      "points10": 0.7,
+      "goal_diff10": -1.6
+    },
+    "Chad": {
+      "elo": 1299.9166917852783,
+      "n_matches": 74,
+      "last_date": "2025-11-17",
+      "gf10": 0.8,
+      "ga10": 2.1,
+      "points10": 0.3,
+      "goal_diff10": -1.3
+    },
+    "Chagos Islands": {
+      "elo": 1473.6484431305344,
+      "n_matches": 8,
+      "last_date": "2019-12-29",
+      "gf10": 2.0,
+      "ga10": 4.0,
+      "points10": 0.75,
+      "goal_diff10": -2.0
+    },
+    "Chameria": {
+      "elo": 1503.0579583415054,
+      "n_matches": 2,
+      "last_date": "2023-07-01",
+      "gf10": 2.5,
+      "ga10": 2.0,
+      "points10": 1.5,
+      "goal_diff10": 0.5
+    },
+    "Chechnya": {
+      "elo": 1492.044,
+      "n_matches": 1,
+      "last_date": "2006-02-18",
+      "gf10": 1.0,
+      "ga10": 13.0,
+      "points10": 0.0,
+      "goal_diff10": -12.0
+    },
+    "Chile": {
+      "elo": 1566.7928586336307,
+      "n_matches": 200,
+      "last_date": "2025-11-18",
+      "gf10": 1.2,
+      "ga10": 1.0,
+      "points10": 1.4,
+      "goal_diff10": 0.2
+    },
+    "China PR": {
+      "elo": 1547.4307417292748,
+      "n_matches": 190,
+      "last_date": "2026-01-26",
+      "gf10": 0.9,
+      "ga10": 1.5,
+      "points10": 1.0,
+      "goal_diff10": -0.6
+    },
+    "Cilento": {
+      "elo": 1494.5320005890653,
+      "n_matches": 1,
+      "last_date": "2011-12-29",
+      "gf10": 0.0,
+      "ga10": 2.0,
+      "points10": 0.0,
+      "goal_diff10": -2.0
+    },
+    "Colombia": {
+      "elo": 1745.06747915818,
+      "n_matches": 188,
+      "last_date": "2026-06-01",
+      "gf10": 2.4,
+      "ga10": 1.1,
+      "points10": 2.0,
+      "goal_diff10": 1.3
+    },
+    "Comoros": {
+      "elo": 1491.9213470203151,
+      "n_matches": 89,
+      "last_date": "2025-11-17",
+      "gf10": 1.2,
+      "ga10": 1.3,
+      "points10": 1.5,
+      "goal_diff10": -0.1
+    },
+    "Congo": {
+      "elo": 1380.0302660578486,
+      "n_matches": 117,
+      "last_date": "2025-10-14",
+      "gf10": 0.6,
+      "ga10": 2.3,
+      "points10": 0.5,
+      "goal_diff10": -1.7
+    },
+    "Cook Islands": {
+      "elo": 1452.7413836274857,
+      "n_matches": 14,
+      "last_date": "2024-09-06",
+      "gf10": 0.8,
+      "ga10": 2.2,
+      "points10": 0.9,
+      "goal_diff10": -1.4
+    },
+    "Corsica": {
+      "elo": 1512.8333671379005,
+      "n_matches": 4,
+      "last_date": "2017-05-26",
+      "gf10": 1.0,
+      "ga10": 0.5,
+      "points10": 2.0,
+      "goal_diff10": 0.5
+    },
+    "Costa Rica": {
+      "elo": 1657.171228822811,
+      "n_matches": 190,
+      "last_date": "2026-06-01",
+      "gf10": 1.3,
+      "ga10": 1.7,
+      "points10": 1.1,
+      "goal_diff10": -0.4
+    },
+    "Croatia": {
+      "elo": 1736.9338251614333,
+      "n_matches": 170,
+      "last_date": "2026-06-02",
+      "gf10": 2.2,
+      "ga10": 1.0,
+      "points10": 2.2,
+      "goal_diff10": 1.2
+    },
+    "Cuba": {
+      "elo": 1434.3264693981537,
+      "n_matches": 95,
+      "last_date": "2025-10-11",
+      "gf10": 0.8,
+      "ga10": 2.1,
+      "points10": 0.9,
+      "goal_diff10": -1.3
+    },
+    "Curaçao": {
+      "elo": 1573.6906121771856,
+      "n_matches": 89,
+      "last_date": "2026-05-30",
+      "gf10": 2.3,
+      "ga10": 1.0,
+      "points10": 1.8,
+      "goal_diff10": 1.3
+    },
+    "Cyprus": {
+      "elo": 1288.2611246032702,
+      "n_matches": 141,
+      "last_date": "2026-03-30",
+      "gf10": 1.5,
+      "ga10": 1.8,
+      "points10": 0.9,
+      "goal_diff10": -0.3
+    },
+    "Czech Republic": {
+      "elo": 1611.4602909329087,
+      "n_matches": 174,
+      "last_date": "2026-05-31",
+      "gf10": 2.0,
+      "ga10": 0.9,
+      "points10": 2.0,
+      "goal_diff10": 1.1
+    },
+    "DR Congo": {
+      "elo": 1646.5795027009192,
+      "n_matches": 158,
+      "last_date": "2026-06-03",
+      "gf10": 1.6,
+      "ga10": 0.5,
+      "points10": 2.5,
+      "goal_diff10": 1.1
+    },
+    "Denmark": {
+      "elo": 1696.8942090319488,
+      "n_matches": 172,
+      "last_date": "2026-06-03",
+      "gf10": 2.7,
+      "ga10": 0.8,
+      "points10": 2.1,
+      "goal_diff10": 1.9
+    },
+    "Djibouti": {
+      "elo": 1222.1826614620609,
+      "n_matches": 51,
+      "last_date": "2025-11-26",
+      "gf10": 0.5,
+      "ga10": 2.7,
+      "points10": 0.2,
+      "goal_diff10": -2.2
+    },
+    "Dominica": {
+      "elo": 1382.295541689561,
+      "n_matches": 57,
+      "last_date": "2025-06-10",
+      "gf10": 1.4,
+      "ga10": 1.7,
+      "points10": 1.5,
+      "goal_diff10": -0.3
+    },
+    "Dominican Republic": {
+      "elo": 1473.207521284634,
+      "n_matches": 74,
+      "last_date": "2026-06-03",
+      "gf10": 1.8,
+      "ga10": 1.9,
+      "points10": 1.0,
+      "goal_diff10": -0.1
+    },
+    "Donetsk PR": {
+      "elo": 1502.8130617581867,
+      "n_matches": 6,
+      "last_date": "2017-08-31",
+      "gf10": 1.3333333333333333,
+      "ga10": 1.1666666666666667,
+      "points10": 1.3333333333333333,
+      "goal_diff10": 0.16666666666666666
+    },
+    "East Turkestan": {
+      "elo": 1495.0364309137117,
+      "n_matches": 2,
+      "last_date": "2019-12-14",
+      "gf10": 4.0,
+      "ga10": 2.5,
+      "points10": 1.5,
+      "goal_diff10": 1.5
+    },
+    "Ecuador": {
+      "elo": 1732.0380167793192,
+      "n_matches": 192,
+      "last_date": "2026-05-30",
+      "gf10": 0.9,
+      "ga10": 0.5,
+      "points10": 1.6,
+      "goal_diff10": 0.4
+    },
+    "Egypt": {
+      "elo": 1755.3565306750666,
+      "n_matches": 185,
+      "last_date": "2026-05-28",
+      "gf10": 1.5,
+      "ga10": 0.1,
+      "points10": 2.4,
+      "goal_diff10": 1.4
+    },
+    "El Salvador": {
+      "elo": 1470.813346587361,
+      "n_matches": 164,
+      "last_date": "2026-06-03",
+      "gf10": 0.7,
+      "ga10": 1.4,
+      "points10": 0.8,
+      "goal_diff10": -0.7
+    },
+    "Elba Island": {
+      "elo": 1506.0437252097922,
+      "n_matches": 1,
+      "last_date": "2022-07-16",
+      "gf10": 5.0,
+      "ga10": 0.0,
+      "points10": 3.0,
+      "goal_diff10": 5.0
+    },
+    "Ellan Vannin": {
+      "elo": 1507.1328407028159,
+      "n_matches": 4,
+      "last_date": "2018-04-29",
+      "gf10": 3.5,
+      "ga10": 1.75,
+      "points10": 1.75,
+      "goal_diff10": 1.75
+    },
+    "England": {
+      "elo": 1847.036820606321,
+      "n_matches": 176,
+      "last_date": "2026-03-31",
+      "gf10": 2.2,
+      "ga10": 0.5,
+      "points10": 2.2,
+      "goal_diff10": 1.7
+    },
+    "Equatorial Guinea": {
+      "elo": 1469.3573032821425,
+      "n_matches": 113,
+      "last_date": "2026-03-31",
+      "gf10": 0.9,
+      "ga10": 1.4,
+      "points10": 1.0,
+      "goal_diff10": -0.5
+    },
+    "Eritrea": {
+      "elo": 1416.3861051592414,
+      "n_matches": 18,
+      "last_date": "2019-09-10",
+      "gf10": 0.4,
+      "ga10": 1.8,
+      "points10": 0.2,
+      "goal_diff10": -1.4
+    },
+    "Estonia": {
+      "elo": 1320.8248118697297,
+      "n_matches": 199,
+      "last_date": "2025-11-18",
+      "gf10": 1.2,
+      "ga10": 2.3,
+      "points10": 0.8,
+      "goal_diff10": -1.1
+    },
+    "Eswatini": {
+      "elo": 1330.692902083733,
+      "n_matches": 118,
+      "last_date": "2025-10-13",
+      "gf10": 0.7,
+      "ga10": 2.4,
+      "points10": 0.5,
+      "goal_diff10": -1.7
+    },
+    "Ethiopia": {
+      "elo": 1419.4262385834131,
+      "n_matches": 117,
+      "last_date": "2025-10-12",
+      "gf10": 1.1,
+      "ga10": 2.0,
+      "points10": 0.9,
+      "goal_diff10": -0.9
+    },
+    "Faroe Islands": {
+      "elo": 1292.2030379359664,
+      "n_matches": 130,
+      "last_date": "2026-03-28",
+      "gf10": 1.3,
+      "ga10": 0.9,
+      "points10": 1.8,
+      "goal_diff10": 0.4
+    },
+    "Fiji": {
+      "elo": 1453.6978581114413,
+      "n_matches": 36,
+      "last_date": "2025-03-21",
+      "gf10": 1.2,
+      "ga10": 2.0,
+      "points10": 1.1,
+      "goal_diff10": -0.8
+    },
+    "Finland": {
+      "elo": 1489.7897486959218,
+      "n_matches": 177,
+      "last_date": "2026-05-31",
+      "gf10": 1.1,
+      "ga10": 1.9,
+      "points10": 1.0,
+      "goal_diff10": -0.8
+    },
+    "France": {
+      "elo": 1831.3679150267865,
+      "n_matches": 185,
+      "last_date": "2026-03-29",
+      "gf10": 2.4,
+      "ga10": 0.6,
+      "points10": 2.6,
+      "goal_diff10": 1.8
+    },
+    "Franconia": {
+      "elo": 1511.501130421294,
+      "n_matches": 2,
+      "last_date": "2019-06-25",
+      "gf10": 4.0,
+      "ga10": 2.5,
+      "points10": 3.0,
+      "goal_diff10": 1.5
+    },
+    "French Guiana": {
+      "elo": 1550.5037821409383,
+      "n_matches": 51,
+      "last_date": "2023-06-17",
+      "gf10": 2.5,
+      "ga10": 1.2,
+      "points10": 2.1,
+      "goal_diff10": 1.3
+    },
+    "Gabon": {
+      "elo": 1554.5525866810783,
+      "n_matches": 146,
+      "last_date": "2025-11-13",
+      "gf10": 2.2,
+      "ga10": 1.2,
+      "points10": 2.2,
+      "goal_diff10": 1.0
+    },
+    "Galicia": {
+      "elo": 1495.8316048967836,
+      "n_matches": 7,
+      "last_date": "2024-05-21",
+      "gf10": 1.2857142857142858,
+      "ga10": 2.142857142857143,
+      "points10": 1.2857142857142858,
+      "goal_diff10": -0.8571428571428571
+    },
+    "Gambia": {
+      "elo": 1498.0419189722868,
+      "n_matches": 107,
+      "last_date": "2026-05-29",
+      "gf10": 2.2,
+      "ga10": 1.6,
+      "points10": 1.4,
+      "goal_diff10": 0.6
+    },
+    "Georgia": {
+      "elo": 1464.4128188803336,
+      "n_matches": 165,
+      "last_date": "2026-06-02",
+      "gf10": 1.3,
+      "ga10": 1.9,
+      "points10": 0.9,
+      "goal_diff10": -0.6
+    },
+    "Germany": {
+      "elo": 1800.951060567321,
+      "n_matches": 184,
+      "last_date": "2026-05-31",
+      "gf10": 2.8,
+      "ga10": 0.8,
+      "points10": 2.7,
+      "goal_diff10": 2.0
+    },
+    "Ghana": {
+      "elo": 1604.2441855089344,
+      "n_matches": 175,
+      "last_date": "2026-06-02",
+      "gf10": 1.4,
+      "ga10": 1.2,
+      "points10": 1.4,
+      "goal_diff10": 0.2
+    },
+    "Gibraltar": {
+      "elo": 1154.3628015243207,
+      "n_matches": 85,
+      "last_date": "2026-06-03",
+      "gf10": 0.6,
+      "ga10": 2.8,
+      "points10": 0.3,
+      "goal_diff10": -2.2
+    },
+    "Gozo": {
+      "elo": 1506.7526537104309,
+      "n_matches": 1,
+      "last_date": "2012-01-14",
+      "gf10": 17.0,
+      "ga10": 1.0,
+      "points10": 3.0,
+      "goal_diff10": 16.0
+    },
+    "Greece": {
+      "elo": 1569.5732724128297,
+      "n_matches": 171,
+      "last_date": "2026-03-31",
+      "gf10": 1.8,
+      "ga10": 1.4,
+      "points10": 1.4,
+      "goal_diff10": 0.4
+    },
+    "Greenland": {
+      "elo": 1490.9537184616954,
+      "n_matches": 1,
+      "last_date": "2024-06-01",
+      "gf10": 0.0,
+      "ga10": 5.0,
+      "points10": 0.0,
+      "goal_diff10": -5.0
+    },
+    "Grenada": {
+      "elo": 1403.9375192605298,
+      "n_matches": 82,
+      "last_date": "2026-05-16",
+      "gf10": 1.8,
+      "ga10": 1.8,
+      "points10": 1.6,
+      "goal_diff10": 0.0
+    },
+    "Guadeloupe": {
+      "elo": 1548.1553097669469,
+      "n_matches": 52,
+      "last_date": "2025-03-25",
+      "gf10": 1.4,
+      "ga10": 0.9,
+      "points10": 1.9,
+      "goal_diff10": 0.5
+    },
+    "Guam": {
+      "elo": 1285.6274100238738,
+      "n_matches": 42,
+      "last_date": "2026-06-03",
+      "gf10": 0.5,
+      "ga10": 3.0,
+      "points10": 0.3,
+      "goal_diff10": -2.5
+    },
+    "Guatemala": {
+      "elo": 1565.5503326379287,
+      "n_matches": 143,
+      "last_date": "2026-03-27",
+      "gf10": 1.3,
+      "ga10": 2.0,
+      "points10": 1.2,
+      "goal_diff10": -0.7
+    },
+    "Guernsey": {
+      "elo": 1500.753485735813,
+      "n_matches": 1,
+      "last_date": "2007-03-24",
+      "gf10": 1.0,
+      "ga10": 1.0,
+      "points10": 1.0,
+      "goal_diff10": 0.0
+    },
+    "Guinea": {
+      "elo": 1549.308358980164,
+      "n_matches": 147,
+      "last_date": "2025-11-18",
+      "gf10": 1.1,
+      "ga10": 0.6,
+      "points10": 1.6,
+      "goal_diff10": 0.5
+    },
+    "Guinea-Bissau": {
+      "elo": 1433.7651102664915,
+      "n_matches": 84,
+      "last_date": "2026-03-31",
+      "gf10": 0.6,
+      "ga10": 1.7,
+      "points10": 0.5,
+      "goal_diff10": -1.1
+    },
+    "Guyana": {
+      "elo": 1450.4322269650213,
+      "n_matches": 98,
+      "last_date": "2025-06-10",
+      "gf10": 1.0,
+      "ga10": 1.6,
+      "points10": 0.9,
+      "goal_diff10": -0.6
+    },
+    "Haiti": {
+      "elo": 1604.906638632061,
+      "n_matches": 121,
+      "last_date": "2026-06-02",
+      "gf10": 1.5,
+      "ga10": 1.3,
+      "points10": 1.5,
+      "goal_diff10": 0.2
+    },
+    "Honduras": {
+      "elo": 1555.6715307482136,
+      "n_matches": 183,
+      "last_date": "2026-03-31",
+      "gf10": 1.2,
+      "ga10": 0.4,
+      "points10": 1.9,
+      "goal_diff10": 0.8
+    },
+    "Hong Kong": {
+      "elo": 1422.0071811813948,
+      "n_matches": 127,
+      "last_date": "2025-11-18",
+      "gf10": 1.7,
+      "ga10": 0.8,
+      "points10": 1.9,
+      "goal_diff10": 0.9
+    },
+    "Hungary": {
+      "elo": 1589.0723106069765,
+      "n_matches": 166,
+      "last_date": "2026-03-31",
+      "gf10": 1.4,
+      "ga10": 1.3,
+      "points10": 1.5,
+      "goal_diff10": 0.1
+    },
+    "Iceland": {
+      "elo": 1515.1341334353256,
+      "n_matches": 189,
+      "last_date": "2026-05-31",
+      "gf10": 1.6,
+      "ga10": 1.9,
+      "points10": 0.9,
+      "goal_diff10": -0.3
+    },
+    "India": {
+      "elo": 1401.6547785203284,
+      "n_matches": 109,
+      "last_date": "2025-11-18",
+      "gf10": 0.8,
+      "ga10": 1.1,
+      "points10": 0.7,
+      "goal_diff10": -0.3
+    },
+    "Indonesia": {
+      "elo": 1510.702018962887,
+      "n_matches": 135,
+      "last_date": "2025-10-11",
+      "gf10": 1.3,
+      "ga10": 1.9,
+      "points10": 1.3,
+      "goal_diff10": -0.6
+    },
+    "Iran": {
+      "elo": 1810.757450560437,
+      "n_matches": 200,
+      "last_date": "2026-05-29",
+      "gf10": 2.2,
+      "ga10": 1.0,
+      "points10": 1.9,
+      "goal_diff10": 1.2
+    },
+    "Iraq": {
+      "elo": 1693.3476706810418,
+      "n_matches": 197,
+      "last_date": "2026-05-29",
+      "gf10": 1.1,
+      "ga10": 0.9,
+      "points10": 1.8,
+      "goal_diff10": 0.2
+    },
+    "Israel": {
+      "elo": 1481.9526970130833,
+      "n_matches": 147,
+      "last_date": "2026-06-03",
+      "gf10": 1.9,
+      "ga10": 1.7,
+      "points10": 1.7,
+      "goal_diff10": 0.2
+    },
+    "Italy": {
+      "elo": 1714.4228300427053,
+      "n_matches": 177,
+      "last_date": "2026-06-03",
+      "gf10": 2.4,
+      "ga10": 1.2,
+      "points10": 2.4,
+      "goal_diff10": 1.2
+    },
+    "Ivory Coast": {
+      "elo": 1699.6846172278651,
+      "n_matches": 179,
+      "last_date": "2026-03-31",
+      "gf10": 2.0,
+      "ga10": 0.1,
+      "points10": 2.5,
+      "goal_diff10": 1.9
+    },
+    "Jamaica": {
+      "elo": 1576.6294245882023,
+      "n_matches": 158,
+      "last_date": "2026-03-31",
+      "gf10": 1.6,
+      "ga10": 0.4,
+      "points10": 2.0,
+      "goal_diff10": 1.2
+    },
+    "Japan": {
+      "elo": 1839.237957177792,
+      "n_matches": 181,
+      "last_date": "2026-05-31",
+      "gf10": 1.4,
+      "ga10": 0.4,
+      "points10": 2.0,
+      "goal_diff10": 1.0
+    },
+    "Jersey": {
+      "elo": 1505.1846538673228,
+      "n_matches": 3,
+      "last_date": "2017-04-23",
+      "gf10": 1.3333333333333333,
+      "ga10": 1.0,
+      "points10": 2.0,
+      "goal_diff10": 0.3333333333333333
+    },
+    "Jordan": {
+      "elo": 1624.2053980153853,
+      "n_matches": 237,
+      "last_date": "2026-05-31",
+      "gf10": 1.4,
+      "ga10": 2.0,
+      "points10": 0.6,
+      "goal_diff10": -0.6
+    },
+    "Kazakhstan": {
+      "elo": 1380.291114410327,
+      "n_matches": 153,
+      "last_date": "2025-11-18",
+      "gf10": 1.0,
+      "ga10": 1.8,
+      "points10": 0.8,
+      "goal_diff10": -0.8
+    },
+    "Kenya": {
+      "elo": 1473.8674899034147,
+      "n_matches": 142,
+      "last_date": "2025-11-18",
+      "gf10": 1.3,
+      "ga10": 2.0,
+      "points10": 1.2,
+      "goal_diff10": -0.7
+    },
+    "Kernow": {
+      "elo": 1514.7122391776202,
+      "n_matches": 3,
+      "last_date": "2023-07-16",
+      "gf10": 2.6666666666666665,
+      "ga10": 0.6666666666666666,
+      "points10": 2.3333333333333335,
+      "goal_diff10": 2.0
+    },
+    "Kosovo": {
+      "elo": 1525.4201121271378,
+      "n_matches": 77,
+      "last_date": "2026-05-31",
+      "gf10": 1.5,
+      "ga10": 1.3,
+      "points10": 1.7,
+      "goal_diff10": 0.2
+    },
+    "Kuwait": {
+      "elo": 1487.0065658249068,
+      "n_matches": 181,
+      "last_date": "2025-11-25",
+      "gf10": 1.3,
+      "ga10": 1.9,
+      "points10": 1.0,
+      "goal_diff10": -0.6
+    },
+    "Kyrgyzstan": {
+      "elo": 1515.759146547887,
+      "n_matches": 102,
+      "last_date": "2026-03-28",
+      "gf10": 1.2,
+      "ga10": 2.0,
+      "points10": 0.8,
+      "goal_diff10": -0.8
+    },
+    "Laos": {
+      "elo": 1293.1615477521789,
+      "n_matches": 82,
+      "last_date": "2025-11-19",
+      "gf10": 0.7,
+      "ga10": 2.4,
+      "points10": 0.5,
+      "goal_diff10": -1.7
+    },
+    "Latvia": {
+      "elo": 1305.7013465190037,
+      "n_matches": 150,
+      "last_date": "2025-11-16",
+      "gf10": 0.5,
+      "ga10": 1.5,
+      "points10": 0.7,
+      "goal_diff10": -1.0
+    },
+    "Lebanon": {
+      "elo": 1503.2340132756667,
+      "n_matches": 153,
+      "last_date": "2025-11-26",
+      "gf10": 2.1,
+      "ga10": 0.5,
+      "points10": 1.8,
+      "goal_diff10": 1.6
+    },
+    "Lesotho": {
+      "elo": 1385.283691543544,
+      "n_matches": 132,
+      "last_date": "2025-11-18",
+      "gf10": 0.7,
+      "ga10": 1.8,
+      "points10": 1.1,
+      "goal_diff10": -1.1
+    },
+    "Liberia": {
+      "elo": 1429.695512826027,
+      "n_matches": 108,
+      "last_date": "2025-11-15",
+      "gf10": 1.1,
+      "ga10": 1.8,
+      "points10": 1.1,
+      "goal_diff10": -0.7
+    },
+    "Libya": {
+      "elo": 1501.3325621060126,
+      "n_matches": 156,
+      "last_date": "2025-11-15",
+      "gf10": 1.0,
+      "ga10": 0.8,
+      "points10": 1.6,
+      "goal_diff10": 0.2
+    },
+    "Liechtenstein": {
+      "elo": 1101.2580708746946,
+      "n_matches": 150,
+      "last_date": "2025-11-18",
+      "gf10": 0.1,
+      "ga10": 3.7,
+      "points10": 0.0,
+      "goal_diff10": -3.6
+    },
+    "Lithuania": {
+      "elo": 1317.6616620589834,
+      "n_matches": 150,
+      "last_date": "2026-03-29",
+      "gf10": 0.6,
+      "ga10": 1.9,
+      "points10": 0.6,
+      "goal_diff10": -1.3
+    },
+    "Luhansk PR": {
+      "elo": 1494.3819781154905,
+      "n_matches": 6,
+      "last_date": "2019-12-08",
+      "gf10": 1.5,
+      "ga10": 2.0,
+      "points10": 1.1666666666666667,
+      "goal_diff10": -0.5
+    },
+    "Luxembourg": {
+      "elo": 1347.6841469389387,
+      "n_matches": 166,
+      "last_date": "2026-06-03",
+      "gf10": 0.2,
+      "ga10": 1.8,
+      "points10": 0.1,
+      "goal_diff10": -1.6
+    },
+    "Macau": {
+      "elo": 1218.1841495301892,
+      "n_matches": 48,
+      "last_date": "2025-03-19",
+      "gf10": 0.2,
+      "ga10": 2.1,
+      "points10": 0.1,
+      "goal_diff10": -1.9
+    },
+    "Madagascar": {
+      "elo": 1466.258033899365,
+      "n_matches": 104,
+      "last_date": "2026-06-02",
+      "gf10": 1.7,
+      "ga10": 1.9,
+      "points10": 1.6,
+      "goal_diff10": -0.2
+    },
+    "Madrid": {
+      "elo": 1493.5093205832638,
+      "n_matches": 1,
+      "last_date": "2013-06-07",
+      "gf10": 1.0,
+      "ga10": 2.0,
+      "points10": 0.0,
+      "goal_diff10": -1.0
+    },
+    "Malawi": {
+      "elo": 1431.8392158228153,
+      "n_matches": 151,
+      "last_date": "2025-11-18",
+      "gf10": 1.1,
+      "ga10": 0.7,
+      "points10": 1.5,
+      "goal_diff10": 0.4
+    },
+    "Malaysia": {
+      "elo": 1541.9529294934607,
+      "n_matches": 154,
+      "last_date": "2025-11-18",
+      "gf10": 2.0,
+      "ga10": 0.7,
+      "points10": 2.3,
+      "goal_diff10": 1.3
+    },
+    "Maldives": {
+      "elo": 1306.0805314984455,
+      "n_matches": 78,
+      "last_date": "2025-11-18",
+      "gf10": 0.5,
+      "ga10": 2.1,
+      "points10": 0.4,
+      "goal_diff10": -1.6
+    },
+    "Mali": {
+      "elo": 1658.0132917780556,
+      "n_matches": 150,
+      "last_date": "2026-03-31",
+      "gf10": 2.1,
+      "ga10": 0.5,
+      "points10": 2.0,
+      "goal_diff10": 1.6
+    },
+    "Malta": {
+      "elo": 1257.1716458920544,
+      "n_matches": 162,
+      "last_date": "2026-06-01",
+      "gf10": 0.9,
+      "ga10": 2.5,
+      "points10": 0.8,
+      "goal_diff10": -1.6
+    },
+    "Martinique": {
+      "elo": 1597.0538048517137,
+      "n_matches": 57,
+      "last_date": "2025-03-25",
+      "gf10": 1.9,
+      "ga10": 0.6,
+      "points10": 2.2,
+      "goal_diff10": 1.3
+    },
+    "Mauritania": {
+      "elo": 1452.467203437045,
+      "n_matches": 121,
+      "last_date": "2026-03-27",
+      "gf10": 0.5,
+      "ga10": 1.2,
+      "points10": 0.7,
+      "goal_diff10": -0.7
+    },
+    "Mauritius": {
+      "elo": 1268.64545444279,
+      "n_matches": 74,
+      "last_date": "2025-10-13",
+      "gf10": 0.8,
+      "ga10": 1.7,
+      "points10": 0.5,
+      "goal_diff10": -0.9
+    },
+    "Mayotte": {
+      "elo": 1488.536262182851,
+      "n_matches": 5,
+      "last_date": "2010-08-20",
+      "gf10": 1.0,
+      "ga10": 1.8,
+      "points10": 0.6,
+      "goal_diff10": -0.8
+    },
+    "Mexico": {
+      "elo": 1734.7502586438384,
+      "n_matches": 229,
+      "last_date": "2026-05-30",
+      "gf10": 1.2,
+      "ga10": 0.4,
+      "points10": 1.9,
+      "goal_diff10": 0.8
+    },
+    "Moldova": {
+      "elo": 1220.0788210836804,
+      "n_matches": 173,
+      "last_date": "2026-03-30",
+      "gf10": 0.6,
+      "ga10": 3.3,
+      "points10": 0.1,
+      "goal_diff10": -2.7
+    },
+    "Monaco": {
+      "elo": 1489.4007418625386,
+      "n_matches": 12,
+      "last_date": "2017-04-29",
+      "gf10": 1.3,
+      "ga10": 2.9,
+      "points10": 1.1,
+      "goal_diff10": -1.6
+    },
+    "Mongolia": {
+      "elo": 1316.9993033798933,
+      "n_matches": 46,
+      "last_date": "2026-05-31",
+      "gf10": 0.6,
+      "ga10": 2.6,
+      "points10": 0.6,
+      "goal_diff10": -2.0
+    },
+    "Montenegro": {
+      "elo": 1426.32527582944,
+      "n_matches": 140,
+      "last_date": "2026-06-01",
+      "gf10": 1.3,
+      "ga10": 2.0,
+      "points10": 1.3,
+      "goal_diff10": -0.7
+    },
+    "Montserrat": {
+      "elo": 1436.725569416469,
+      "n_matches": 24,
+      "last_date": "2025-06-10",
+      "gf10": 1.5,
+      "ga10": 2.1,
+      "points10": 1.4,
+      "goal_diff10": -0.6
+    },
+    "Morocco": {
+      "elo": 1798.3221841645195,
+      "n_matches": 175,
+      "last_date": "2026-06-02",
+      "gf10": 2.6,
+      "ga10": 0.2,
+      "points10": 2.8,
+      "goal_diff10": 2.4
+    },
+    "Mozambique": {
+      "elo": 1503.3800762107464,
+      "n_matches": 144,
+      "last_date": "2025-11-17",
+      "gf10": 1.2,
+      "ga10": 1.8,
+      "points10": 1.3,
+      "goal_diff10": -0.6
+    },
+    "Myanmar": {
+      "elo": 1333.7050380196408,
+      "n_matches": 113,
+      "last_date": "2025-10-14",
+      "gf10": 1.2,
+      "ga10": 2.0,
+      "points10": 1.1,
+      "goal_diff10": -0.8
+    },
+    "Namibia": {
+      "elo": 1450.1317133737805,
+      "n_matches": 125,
+      "last_date": "2025-11-17",
+      "gf10": 0.7,
+      "ga10": 1.4,
+      "points10": 0.9,
+      "goal_diff10": -0.7
+    },
+    "Nepal": {
+      "elo": 1310.196097062412,
+      "n_matches": 96,
+      "last_date": "2025-11-18",
+      "gf10": 0.7,
+      "ga10": 1.1,
+      "points10": 0.9,
+      "goal_diff10": -0.4
+    },
+    "Netherlands": {
+      "elo": 1756.3578544073678,
+      "n_matches": 180,
+      "last_date": "2026-06-03",
+      "gf10": 2.8,
+      "ga10": 0.7,
+      "points10": 2.1,
+      "goal_diff10": 2.1
+    },
+    "New Caledonia": {
+      "elo": 1486.31977708662,
+      "n_matches": 39,
+      "last_date": "2026-03-26",
+      "gf10": 1.6,
+      "ga10": 1.7,
+      "points10": 1.6,
+      "goal_diff10": -0.1
+    },
+    "New Zealand": {
+      "elo": 1607.3348930089376,
+      "n_matches": 95,
+      "last_date": "2026-06-02",
+      "gf10": 3.2,
+      "ga10": 1.1,
+      "points10": 1.6,
+      "goal_diff10": 2.1
+    },
+    "Nicaragua": {
+      "elo": 1472.5116430038288,
+      "n_matches": 82,
+      "last_date": "2026-05-29",
+      "gf10": 0.6,
+      "ga10": 1.8,
+      "points10": 0.8,
+      "goal_diff10": -1.2
+    },
+    "Niger": {
+      "elo": 1474.6574435456037,
+      "n_matches": 136,
+      "last_date": "2025-11-18",
+      "gf10": 2.0,
+      "ga10": 1.6,
+      "points10": 1.7,
+      "goal_diff10": 0.4
+    },
+    "Nigeria": {
+      "elo": 1652.0080967128272,
+      "n_matches": 180,
+      "last_date": "2026-06-03",
+      "gf10": 2.0,
+      "ga10": 1.0,
+      "points10": 2.0,
+      "goal_diff10": 1.0
+    },
+    "North Korea": {
+      "elo": 1528.7146797562318,
+      "n_matches": 109,
+      "last_date": "2025-06-10",
+      "gf10": 1.0,
+      "ga10": 2.1,
+      "points10": 0.4,
+      "goal_diff10": -1.1
+    },
+    "North Macedonia": {
+      "elo": 1509.1160621435783,
+      "n_matches": 168,
+      "last_date": "2026-06-01",
+      "gf10": 0.8,
+      "ga10": 1.8,
+      "points10": 0.8,
+      "goal_diff10": -1.0
+    },
+    "Northern Cyprus": {
+      "elo": 1499.844382589993,
+      "n_matches": 2,
+      "last_date": "2007-01-24",
+      "gf10": 2.0,
+      "ga10": 2.0,
+      "points10": 1.5,
+      "goal_diff10": 0.0
+    },
+    "Northern Ireland": {
+      "elo": 1506.5064436542107,
+      "n_matches": 153,
+      "last_date": "2026-03-31",
+      "gf10": 1.0,
+      "ga10": 1.1,
+      "points10": 1.3,
+      "goal_diff10": -0.1
+    },
+    "Northern Mariana Islands": {
+      "elo": 1442.8435902878334,
+      "n_matches": 6,
+      "last_date": "2013-03-06",
+      "gf10": 0.5,
+      "ga10": 5.166666666666667,
+      "points10": 0.16666666666666666,
+      "goal_diff10": -4.666666666666667
+    },
+    "Norway": {
+      "elo": 1656.0834063998539,
+      "n_matches": 177,
+      "last_date": "2026-06-01",
+      "gf10": 3.1,
+      "ga10": 0.7,
+      "points10": 2.3,
+      "goal_diff10": 2.4
+    },
+    "Occitania": {
+      "elo": 1538.3546345950838,
+      "n_matches": 7,
+      "last_date": "2014-12-30",
+      "gf10": 5.0,
+      "ga10": 1.2857142857142858,
+      "points10": 2.7142857142857144,
+      "goal_diff10": 3.7142857142857144
+    },
+    "Oman": {
+      "elo": 1608.9616547166493,
+      "n_matches": 213,
+      "last_date": "2025-11-18",
+      "gf10": 0.7,
+      "ga10": 0.9,
+      "points10": 1.3,
+      "goal_diff10": -0.2
+    },
+    "Padania": {
+      "elo": 1499.3950386340236,
+      "n_matches": 2,
+      "last_date": "2016-05-16",
+      "gf10": 1.5,
+      "ga10": 1.5,
+      "points10": 1.5,
+      "goal_diff10": 0.0
+    },
+    "Pakistan": {
+      "elo": 1285.9541516986542,
+      "n_matches": 56,
+      "last_date": "2025-11-18",
+      "gf10": 0.2,
+      "ga10": 3.1,
+      "points10": 0.2,
+      "goal_diff10": -2.9
+    },
+    "Palestine": {
+      "elo": 1561.6071338402435,
+      "n_matches": 121,
+      "last_date": "2025-11-15",
+      "gf10": 0.9,
+      "ga10": 1.4,
+      "points10": 0.9,
+      "goal_diff10": -0.5
+    },
+    "Panama": {
+      "elo": 1645.6687481491556,
+      "n_matches": 180,
+      "last_date": "2026-06-03",
+      "gf10": 1.8,
+      "ga10": 1.5,
+      "points10": 1.8,
+      "goal_diff10": 0.3
+    },
+    "Panjab": {
+      "elo": 1511.25023498926,
+      "n_matches": 7,
+      "last_date": "2019-12-29",
+      "gf10": 3.7142857142857144,
+      "ga10": 1.5714285714285714,
+      "points10": 1.7142857142857142,
+      "goal_diff10": 2.142857142857143
+    },
+    "Papua New Guinea": {
+      "elo": 1411.7080112371616,
+      "n_matches": 19,
+      "last_date": "2024-11-17",
+      "gf10": 1.3,
+      "ga10": 2.7,
+      "points10": 0.8,
+      "goal_diff10": -1.4
+    },
+    "Paraguay": {
+      "elo": 1639.8598017911347,
+      "n_matches": 181,
+      "last_date": "2026-03-31",
+      "gf10": 1.0,
+      "ga10": 1.0,
+      "points10": 1.4,
+      "goal_diff10": 0.0
+    },
+    "Parishes of Jersey": {
+      "elo": 1505.3492326760763,
+      "n_matches": 1,
+      "last_date": "2018-10-21",
+      "gf10": 2.0,
+      "ga10": 1.0,
+      "points10": 3.0,
+      "goal_diff10": 1.0
+    },
+    "Peru": {
+      "elo": 1561.1768688827017,
+      "n_matches": 185,
+      "last_date": "2026-03-31",
+      "gf10": 0.5,
+      "ga10": 1.4,
+      "points10": 0.4,
+      "goal_diff10": -0.9
+    },
+    "Philippines": {
+      "elo": 1447.2403725441884,
+      "n_matches": 121,
+      "last_date": "2026-06-03",
+      "gf10": 2.3,
+      "ga10": 1.9,
+      "points10": 1.6,
+      "goal_diff10": 0.4
+    },
+    "Poland": {
+      "elo": 1652.4616906801468,
+      "n_matches": 196,
+      "last_date": "2026-06-03",
+      "gf10": 1.7,
+      "ga10": 1.3,
+      "points10": 1.8,
+      "goal_diff10": 0.4
+    },
+    "Portugal": {
+      "elo": 1778.6098631226432,
+      "n_matches": 175,
+      "last_date": "2026-03-31",
+      "gf10": 2.6,
+      "ga10": 0.9,
+      "points10": 2.0,
+      "goal_diff10": 1.7
+    },
+    "Provence": {
+      "elo": 1519.5166100000881,
+      "n_matches": 3,
+      "last_date": "2013-02-13",
+      "gf10": 4.0,
+      "ga10": 1.3333333333333333,
+      "points10": 3.0,
+      "goal_diff10": 2.6666666666666665
+    },
+    "Puerto Rico": {
+      "elo": 1431.347433693254,
+      "n_matches": 63,
+      "last_date": "2025-10-14",
+      "gf10": 1.4,
+      "ga10": 1.7,
+      "points10": 1.0,
+      "goal_diff10": -0.3
+    },
+    "Qatar": {
+      "elo": 1605.4601676169264,
+      "n_matches": 227,
+      "last_date": "2026-05-28",
+      "gf10": 1.0,
+      "ga10": 1.8,
+      "points10": 0.9,
+      "goal_diff10": -0.8
+    },
+    "Raetia": {
+      "elo": 1479.2382797722973,
+      "n_matches": 15,
+      "last_date": "2023-08-06",
+      "gf10": 2.3,
+      "ga10": 3.1,
+      "points10": 0.9,
+      "goal_diff10": -0.8
+    },
+    "Republic of Ireland": {
+      "elo": 1580.3311077731232,
+      "n_matches": 178,
+      "last_date": "2026-05-28",
+      "gf10": 1.5,
+      "ga10": 0.7,
+      "points10": 1.8,
+      "goal_diff10": 0.8
+    },
+    "Romani people": {
+      "elo": 1492.927903817998,
+      "n_matches": 3,
+      "last_date": "2016-05-16",
+      "gf10": 1.6666666666666667,
+      "ga10": 4.666666666666667,
+      "points10": 1.0,
+      "goal_diff10": -3.0
+    },
+    "Romania": {
+      "elo": 1530.5775084734262,
+      "n_matches": 173,
+      "last_date": "2026-06-02",
+      "gf10": 1.6,
+      "ga10": 1.4,
+      "points10": 1.4,
+      "goal_diff10": 0.2
+    },
+    "Russia": {
+      "elo": 1691.6425509356516,
+      "n_matches": 165,
+      "last_date": "2026-05-28",
+      "gf10": 1.7,
+      "ga10": 0.8,
+      "points10": 1.8,
+      "goal_diff10": 0.9
+    },
+    "Rwanda": {
+      "elo": 1426.6944662419517,
+      "n_matches": 130,
+      "last_date": "2025-10-14",
+      "gf10": 0.4,
+      "ga10": 1.4,
+      "points10": 0.7,
+      "goal_diff10": -1.0
+    },
+    "Ryūkyū": {
+      "elo": 1492.044,
+      "n_matches": 1,
+      "last_date": "2016-11-26",
+      "gf10": 0.0,
+      "ga10": 9.0,
+      "points10": 0.0,
+      "goal_diff10": -9.0
+    },
+    "Réunion": {
+      "elo": 1506.47347879535,
+      "n_matches": 6,
+      "last_date": "2011-05-07",
+      "gf10": 1.8333333333333333,
+      "ga10": 1.6666666666666667,
+      "points10": 1.6666666666666667,
+      "goal_diff10": 0.16666666666666666
+    },
+    "Saint Barthélemy": {
+      "elo": 1480.6613338003183,
+      "n_matches": 10,
+      "last_date": "2023-03-10",
+      "gf10": 2.5,
+      "ga10": 3.0,
+      "points10": 1.3,
+      "goal_diff10": -0.5
+    },
+    "Saint Helena": {
+      "elo": 1493.0687406007055,
+      "n_matches": 1,
+      "last_date": "2019-06-12",
+      "gf10": 2.0,
+      "ga10": 7.0,
+      "points10": 0.0,
+      "goal_diff10": -5.0
+    },
+    "Saint Kitts and Nevis": {
+      "elo": 1437.8835801591993,
+      "n_matches": 88,
+      "last_date": "2025-10-05",
+      "gf10": 1.7,
+      "ga10": 2.2,
+      "points10": 1.3,
+      "goal_diff10": -0.5
+    },
+    "Saint Lucia": {
+      "elo": 1373.8279913121198,
+      "n_matches": 55,
+      "last_date": "2025-06-10",
+      "gf10": 1.0,
+      "ga10": 1.7,
+      "points10": 1.1,
+      "goal_diff10": -0.7
+    },
+    "Saint Martin": {
+      "elo": 1374.2914479053093,
+      "n_matches": 28,
+      "last_date": "2025-10-05",
+      "gf10": 1.6,
+      "ga10": 3.9,
+      "points10": 0.6,
+      "goal_diff10": -2.3
+    },
+    "Saint Vincent and the Grenadines": {
+      "elo": 1393.3095027677928,
+      "n_matches": 66,
+      "last_date": "2025-10-08",
+      "gf10": 2.4,
+      "ga10": 0.9,
+      "points10": 1.8,
+      "goal_diff10": 1.5
+    },
+    "Samoa": {
+      "elo": 1506.4124360938993,
+      "n_matches": 16,
+      "last_date": "2024-11-18",
+      "gf10": 1.6,
+      "ga10": 2.0,
+      "points10": 1.8,
+      "goal_diff10": -0.4
+    },
+    "San Marino": {
+      "elo": 990.0984341970886,
+      "n_matches": 130,
+      "last_date": "2026-03-31",
+      "gf10": 0.3,
+      "ga10": 3.8,
+      "points10": 0.1,
+      "goal_diff10": -3.5
+    },
+    "Saudi Arabia": {
+      "elo": 1658.8742618910753,
+      "n_matches": 215,
+      "last_date": "2026-05-30",
+      "gf10": 1.0,
+      "ga10": 1.6,
+      "points10": 1.1,
+      "goal_diff10": -0.6
+    },
+    "Saugeais": {
+      "elo": 1499.1027349185233,
+      "n_matches": 1,
+      "last_date": "2013-06-29",
+      "gf10": 1.0,
+      "ga10": 1.0,
+      "points10": 1.0,
+      "goal_diff10": 0.0
+    },
+    "Scotland": {
+      "elo": 1614.1488615834598,
+      "n_matches": 149,
+      "last_date": "2026-05-30",
+      "gf10": 2.1,
+      "ga10": 1.0,
+      "points10": 1.9,
+      "goal_diff10": 1.1
+    },
+    "Sealand": {
+      "elo": 1521.1714873510784,
+      "n_matches": 6,
+      "last_date": "2014-08-10",
+      "gf10": 3.0,
+      "ga10": 1.8333333333333333,
+      "points10": 2.1666666666666665,
+      "goal_diff10": 1.1666666666666667
+    },
+    "Seborga": {
+      "elo": 1493.6430221320002,
+      "n_matches": 1,
+      "last_date": "2014-08-10",
+      "gf10": 2.0,
+      "ga10": 3.0,
+      "points10": 0.0,
+      "goal_diff10": -1.0
+    },
+    "Senegal": {
+      "elo": 1775.0207203023588,
+      "n_matches": 164,
+      "last_date": "2026-05-31",
+      "gf10": 3.2,
+      "ga10": 0.9,
+      "points10": 2.4,
+      "goal_diff10": 2.3
+    },
+    "Serbia": {
+      "elo": 1631.1794909959349,
+      "n_matches": 176,
+      "last_date": "2026-05-31",
+      "gf10": 1.1,
+      "ga10": 1.7,
+      "points10": 1.5,
+      "goal_diff10": -0.6
+    },
+    "Seychelles": {
+      "elo": 1200.6593443390047,
+      "n_matches": 67,
+      "last_date": "2025-10-14",
+      "gf10": 0.2,
+      "ga10": 5.3,
+      "points10": 0.0,
+      "goal_diff10": -5.1
+    },
+    "Sierra Leone": {
+      "elo": 1468.6222626308734,
+      "n_matches": 100,
+      "last_date": "2025-10-12",
+      "gf10": 1.1,
+      "ga10": 1.2,
+      "points10": 1.4,
+      "goal_diff10": -0.1
+    },
+    "Silesia": {
+      "elo": 1499.7009043127114,
+      "n_matches": 1,
+      "last_date": "2006-12-09",
+      "gf10": 1.0,
+      "ga10": 1.0,
+      "points10": 1.0,
+      "goal_diff10": 0.0
+    },
+    "Singapore": {
+      "elo": 1412.9977523317737,
+      "n_matches": 173,
+      "last_date": "2026-05-31",
+      "gf10": 1.8,
+      "ga10": 1.1,
+      "points10": 1.8,
+      "goal_diff10": 0.7
+    },
+    "Sint Maarten": {
+      "elo": 1437.7826096810136,
+      "n_matches": 11,
+      "last_date": "2023-06-17",
+      "gf10": 1.2,
+      "ga10": 4.8,
+      "points10": 0.5,
+      "goal_diff10": -3.6
+    },
+    "Slovakia": {
+      "elo": 1600.5176780166178,
+      "n_matches": 172,
+      "last_date": "2026-06-01",
+      "gf10": 1.3,
+      "ga10": 1.4,
+      "points10": 1.8,
+      "goal_diff10": -0.1
+    },
+    "Slovenia": {
+      "elo": 1556.933122690996,
+      "n_matches": 159,
+      "last_date": "2026-03-31",
+      "gf10": 0.9,
+      "ga10": 1.2,
+      "points10": 1.3,
+      "goal_diff10": -0.3
+    },
+    "Solomon Islands": {
+      "elo": 1476.029634772431,
+      "n_matches": 41,
+      "last_date": "2024-11-17",
+      "gf10": 1.2,
+      "ga10": 1.8,
+      "points10": 1.3,
+      "goal_diff10": -0.6
+    },
+    "Somalia": {
+      "elo": 1308.6350059710774,
+      "n_matches": 30,
+      "last_date": "2025-11-17",
+      "gf10": 0.6,
+      "ga10": 1.9,
+      "points10": 0.5,
+      "goal_diff10": -1.3
+    },
+    "Somaliland": {
+      "elo": 1493.5077631674794,
+      "n_matches": 2,
+      "last_date": "2019-05-04",
+      "gf10": 2.0,
+      "ga10": 4.0,
+      "points10": 0.5,
+      "goal_diff10": -2.0
+    },
+    "South Africa": {
+      "elo": 1613.8796108778151,
+      "n_matches": 192,
+      "last_date": "2026-05-29",
+      "gf10": 1.4,
+      "ga10": 0.5,
+      "points10": 1.7,
+      "goal_diff10": 0.9
+    },
+    "South Korea": {
+      "elo": 1780.3378476215144,
+      "n_matches": 219,
+      "last_date": "2026-06-03",
+      "gf10": 1.5,
+      "ga10": 1.2,
+      "points10": 1.9,
+      "goal_diff10": 0.3
+    },
+    "South Ossetia": {
+      "elo": 1494.0026592054662,
+      "n_matches": 3,
+      "last_date": "2019-12-08",
+      "gf10": 1.6666666666666667,
+      "ga10": 2.3333333333333335,
+      "points10": 1.0,
+      "goal_diff10": -0.6666666666666666
+    },
+    "South Sudan": {
+      "elo": 1327.198963102815,
+      "n_matches": 65,
+      "last_date": "2025-11-25",
+      "gf10": 0.6,
+      "ga10": 2.0,
+      "points10": 0.6,
+      "goal_diff10": -1.4
+    },
+    "Spain": {
+      "elo": 1862.0808744970557,
+      "n_matches": 177,
+      "last_date": "2026-03-31",
+      "gf10": 3.4,
+      "ga10": 0.3,
+      "points10": 2.6,
+      "goal_diff10": 3.1
+    },
+    "Sri Lanka": {
+      "elo": 1301.2280241605774,
+      "n_matches": 65,
+      "last_date": "2025-11-18",
+      "gf10": 1.0,
+      "ga10": 1.2,
+      "points10": 1.6,
+      "goal_diff10": -0.2
+    },
+    "Sudan": {
+      "elo": 1475.4390206974997,
+      "n_matches": 143,
+      "last_date": "2025-11-26",
+      "gf10": 0.3,
+      "ga10": 0.8,
+      "points10": 0.8,
+      "goal_diff10": -0.5
+    },
+    "Suriname": {
+      "elo": 1558.488112417084,
+      "n_matches": 87,
+      "last_date": "2026-03-26",
+      "gf10": 1.3,
+      "ga10": 0.9,
+      "points10": 1.6,
+      "goal_diff10": 0.4
+    },
+    "Surrey": {
+      "elo": 1507.3439753834282,
+      "n_matches": 1,
+      "last_date": "2018-05-06",
+      "gf10": 3.0,
+      "ga10": 1.0,
+      "points10": 3.0,
+      "goal_diff10": 2.0
+    },
+    "Sweden": {
+      "elo": 1603.6791861910085,
+      "n_matches": 207,
+      "last_date": "2026-06-01",
+      "gf10": 1.5,
+      "ga10": 2.1,
+      "points10": 1.1,
+      "goal_diff10": -0.6
+    },
+    "Switzerland": {
+      "elo": 1712.456118815276,
+      "n_matches": 167,
+      "last_date": "2026-05-31",
+      "gf10": 2.5,
+      "ga10": 0.7,
+      "points10": 2.1,
+      "goal_diff10": 1.8
+    },
+    "Syria": {
+      "elo": 1573.844455647828,
+      "n_matches": 174,
+      "last_date": "2025-11-25",
+      "gf10": 2.1,
+      "ga10": 1.5,
+      "points10": 1.9,
+      "goal_diff10": 0.6
+    },
+    "Székely Land": {
+      "elo": 1526.027434812858,
+      "n_matches": 3,
+      "last_date": "2023-07-02",
+      "gf10": 4.333333333333333,
+      "ga10": 0.6666666666666666,
+      "points10": 3.0,
+      "goal_diff10": 3.6666666666666665
+    },
+    "Sápmi": {
+      "elo": 1486.4620791482428,
+      "n_matches": 2,
+      "last_date": "2023-07-16",
+      "gf10": 1.5,
+      "ga10": 2.5,
+      "points10": 0.0,
+      "goal_diff10": -1.0
+    },
+    "São Tomé and Príncipe": {
+      "elo": 1279.4798670290782,
+      "n_matches": 49,
+      "last_date": "2025-10-13",
+      "gf10": 0.6,
+      "ga10": 2.1,
+      "points10": 0.5,
+      "goal_diff10": -1.5
+    },
+    "Tahiti": {
+      "elo": 1453.6428663823003,
+      "n_matches": 26,
+      "last_date": "2025-03-21",
+      "gf10": 2.0,
+      "ga10": 1.4,
+      "points10": 1.5,
+      "goal_diff10": 0.6
+    },
+    "Taiwan": {
+      "elo": 1283.7181211576717,
+      "n_matches": 82,
+      "last_date": "2025-11-18",
+      "gf10": 1.4,
+      "ga10": 2.9,
+      "points10": 0.6,
+      "goal_diff10": -1.5
+    },
+    "Tajikistan": {
+      "elo": 1529.3091124537032,
+      "n_matches": 111,
+      "last_date": "2025-11-18",
+      "gf10": 2.5,
+      "ga10": 0.9,
+      "points10": 2.5,
+      "goal_diff10": 1.6
+    },
+    "Tamil Eelam": {
+      "elo": 1520.240585493533,
+      "n_matches": 2,
+      "last_date": "2019-12-14",
+      "gf10": 4.0,
+      "ga10": 0.0,
+      "points10": 3.0,
+      "goal_diff10": 4.0
+    },
+    "Tanzania": {
+      "elo": 1464.6175837166325,
+      "n_matches": 151,
+      "last_date": "2025-11-15",
+      "gf10": 0.7,
+      "ga10": 1.3,
+      "points10": 0.8,
+      "goal_diff10": -0.6
+    },
+    "Thailand": {
+      "elo": 1519.7861797398484,
+      "n_matches": 142,
+      "last_date": "2025-11-18",
+      "gf10": 2.2,
+      "ga10": 0.7,
+      "points10": 2.3,
+      "goal_diff10": 1.5
+    },
+    "Tibet": {
+      "elo": 1492.8476162155173,
+      "n_matches": 2,
+      "last_date": "2022-08-07",
+      "gf10": 1.5,
+      "ga10": 3.0,
+      "points10": 0.5,
+      "goal_diff10": -1.5
+    },
+    "Ticino": {
+      "elo": 1475.085115448327,
+      "n_matches": 2,
+      "last_date": "2023-08-06",
+      "gf10": 1.0,
+      "ga10": 6.5,
+      "points10": 0.0,
+      "goal_diff10": -5.5
+    },
+    "Timor-Leste": {
+      "elo": 1230.717013227902,
+      "n_matches": 67,
+      "last_date": "2025-11-18",
+      "gf10": 0.8,
+      "ga10": 2.0,
+      "points10": 1.0,
+      "goal_diff10": -1.2
+    },
+    "Togo": {
+      "elo": 1446.4141917465747,
+      "n_matches": 149,
+      "last_date": "2025-10-13",
+      "gf10": 0.7,
+      "ga10": 1.4,
+      "points10": 0.8,
+      "goal_diff10": -0.7
+    },
+    "Tonga": {
+      "elo": 1427.2731926027407,
+      "n_matches": 13,
+      "last_date": "2024-09-09",
+      "gf10": 0.9,
+      "ga10": 2.3,
+      "points10": 0.7,
+      "goal_diff10": -1.4
+    },
+    "Trinidad and Tobago": {
+      "elo": 1530.86217919471,
+      "n_matches": 168,
+      "last_date": "2026-05-30",
+      "gf10": 1.4,
+      "ga10": 1.8,
+      "points10": 1.0,
+      "goal_diff10": -0.4
+    },
+    "Tunisia": {
+      "elo": 1712.8876843357425,
+      "n_matches": 189,
+      "last_date": "2026-06-01",
+      "gf10": 1.9,
+      "ga10": 0.5,
+      "points10": 2.1,
+      "goal_diff10": 1.4
+    },
+    "Turkey": {
+      "elo": 1701.0002149322877,
+      "n_matches": 193,
+      "last_date": "2026-06-01",
+      "gf10": 2.3,
+      "ga10": 1.3,
+      "points10": 2.2,
+      "goal_diff10": 1.0
+    },
+    "Turkmenistan": {
+      "elo": 1468.5086356026363,
+      "n_matches": 76,
+      "last_date": "2025-11-18",
+      "gf10": 1.6,
+      "ga10": 1.4,
+      "points10": 1.6,
+      "goal_diff10": 0.2
+    },
+    "Turks and Caicos Islands": {
+      "elo": 1349.1237299175887,
+      "n_matches": 24,
+      "last_date": "2024-03-22",
+      "gf10": 1.0,
+      "ga10": 4.5,
+      "points10": 0.8,
+      "goal_diff10": -3.5
+    },
+    "Tuvalu": {
+      "elo": 1506.9776386142817,
+      "n_matches": 1,
+      "last_date": "2011-08-22",
+      "gf10": 3.0,
+      "ga10": 0.0,
+      "points10": 3.0,
+      "goal_diff10": 3.0
+    },
+    "Two Sicilies": {
+      "elo": 1476.7885377836133,
+      "n_matches": 2,
+      "last_date": "2023-07-02",
+      "gf10": 0.5,
+      "ga10": 5.0,
+      "points10": 0.0,
+      "goal_diff10": -4.5
+    },
+    "Uganda": {
+      "elo": 1544.01866131186,
+      "n_matches": 162,
+      "last_date": "2025-11-18",
+      "gf10": 1.3,
+      "ga10": 1.4,
+      "points10": 1.6,
+      "goal_diff10": -0.1
+    },
+    "Ukraine": {
+      "elo": 1680.7384502459008,
+      "n_matches": 170,
+      "last_date": "2026-05-31",
+      "gf10": 1.8,
+      "ga10": 1.4,
+      "points10": 1.9,
+      "goal_diff10": 0.4
+    },
+    "United Arab Emirates": {
+      "elo": 1647.3060076196527,
+      "n_matches": 199,
+      "last_date": "2025-11-18",
+      "gf10": 1.2,
+      "ga10": 1.1,
+      "points10": 1.5,
+      "goal_diff10": 0.1
+    },
+    "United Koreans in Japan": {
+      "elo": 1507.956,
+      "n_matches": 1,
+      "last_date": "2016-11-26",
+      "gf10": 9.0,
+      "ga10": 0.0,
+      "points10": 3.0,
+      "goal_diff10": 9.0
+    },
+    "United States": {
+      "elo": 1689.0499850687759,
+      "n_matches": 209,
+      "last_date": "2026-05-31",
+      "gf10": 1.7,
+      "ga10": 1.9,
+      "points10": 1.6,
+      "goal_diff10": -0.2
+    },
+    "United States Virgin Islands": {
+      "elo": 1303.3955564374498,
+      "n_matches": 32,
+      "last_date": "2024-03-22",
+      "gf10": 0.4,
+      "ga10": 3.9,
+      "points10": 0.4,
+      "goal_diff10": -3.5
+    },
+    "Uruguay": {
+      "elo": 1714.7816795050255,
+      "n_matches": 181,
+      "last_date": "2026-03-31",
+      "gf10": 1.0,
+      "ga10": 0.9,
+      "points10": 1.6,
+      "goal_diff10": 0.1
+    },
+    "Uzbekistan": {
+      "elo": 1708.1016244461805,
+      "n_matches": 195,
+      "last_date": "2026-06-01",
+      "gf10": 1.2,
+      "ga10": 0.8,
+      "points10": 1.6,
+      "goal_diff10": 0.4
+    },
+    "Vanuatu": {
+      "elo": 1475.5876178005642,
+      "n_matches": 24,
+      "last_date": "2024-11-18",
+      "gf10": 1.1,
+      "ga10": 2.5,
+      "points10": 1.0,
+      "goal_diff10": -1.4
+    },
+    "Vatican City": {
+      "elo": 1471.2285988799558,
+      "n_matches": 6,
+      "last_date": "2019-03-23",
+      "gf10": 0.6666666666666666,
+      "ga10": 2.8333333333333335,
+      "points10": 0.3333333333333333,
+      "goal_diff10": -2.1666666666666665
+    },
+    "Venezuela": {
+      "elo": 1533.1427799077812,
+      "n_matches": 197,
+      "last_date": "2025-11-18",
+      "gf10": 0.9,
+      "ga10": 1.9,
+      "points10": 0.9,
+      "goal_diff10": -1.0
+    },
+    "Vietnam": {
+      "elo": 1501.5025218273724,
+      "n_matches": 107,
+      "last_date": "2026-03-26",
+      "gf10": 1.8,
+      "ga10": 1.2,
+      "points10": 1.9,
+      "goal_diff10": 0.6
+    },
+    "Wales": {
+      "elo": 1611.7357009389639,
+      "n_matches": 155,
+      "last_date": "2026-06-02",
+      "gf10": 1.9,
+      "ga10": 1.5,
+      "points10": 1.4,
+      "goal_diff10": 0.4
+    },
+    "West Papua": {
+      "elo": 1491.4006536602171,
+      "n_matches": 2,
+      "last_date": "2022-11-13",
+      "gf10": 1.5,
+      "ga10": 4.5,
+      "points10": 0.5,
+      "goal_diff10": -3.0
+    },
+    "Western Sahara": {
+      "elo": 1494.2444489290353,
+      "n_matches": 1,
+      "last_date": "2011-02-27",
+      "gf10": 1.0,
+      "ga10": 2.0,
+      "points10": 0.0,
+      "goal_diff10": -1.0
+    },
+    "Yemen": {
+      "elo": 1425.4272014977475,
+      "n_matches": 113,
+      "last_date": "2025-11-18",
+      "gf10": 2.2,
+      "ga10": 0.7,
+      "points10": 1.6,
+      "goal_diff10": 1.5
+    },
+    "Ynys Môn": {
+      "elo": 1506.9312593992945,
+      "n_matches": 1,
+      "last_date": "2019-06-12",
+      "gf10": 7.0,
+      "ga10": 2.0,
+      "points10": 3.0,
+      "goal_diff10": 5.0
+    },
+    "Yorkshire": {
+      "elo": 1521.517567169734,
+      "n_matches": 6,
+      "last_date": "2019-05-04",
+      "gf10": 4.333333333333333,
+      "ga10": 1.8333333333333333,
+      "points10": 2.1666666666666665,
+      "goal_diff10": 2.5
+    },
+    "Zambia": {
+      "elo": 1518.887096520674,
+      "n_matches": 175,
+      "last_date": "2026-03-31",
+      "gf10": 0.8,
+      "ga10": 1.9,
+      "points10": 1.2,
+      "goal_diff10": -1.1
+    },
+    "Zanzibar": {
+      "elo": 1500.9808677068418,
+      "n_matches": 3,
+      "last_date": "2007-01-24",
+      "gf10": 1.3333333333333333,
+      "ga10": 1.3333333333333333,
+      "points10": 1.3333333333333333,
+      "goal_diff10": 0.0
+    },
+    "Zimbabwe": {
+      "elo": 1455.1843628018412,
+      "n_matches": 126,
+      "last_date": "2025-11-17",
+      "gf10": 0.7,
+      "ga10": 1.3,
+      "points10": 0.7,
+      "goal_diff10": -0.6
+    }
+  }
+}

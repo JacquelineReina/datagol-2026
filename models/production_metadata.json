@@ -1,0 +1,103 @@
+{
+  "version": "DataGol-2026.1.0",
+  "cutoff": "2026-06-03",
+  "dataset_sha256": "bd6edafbdb261f1d2e31f4d1166c763188795395b4117e76068a6f4617cb79a7",
+  "training_rows": 13988,
+  "feature_rows": 13149,
+  "probability_model": "validated ensemble",
+  "scoreline_model": "full penalized Dixon-Coles",
+  "ensemble_weights": {
+    "dixon_coles": 0.792097969810645,
+    "elo_logit": 0.2079020301893551,
+    "gradient_boosting": 0.0
+  },
+  "logit_temperature": 1.247184759461028,
+  "gb_temperature": 1.1869132155489848,
+  "scientific_status": "VALIDATED_FOR_PUBLIC_PREDICTION",
+  "test_metrics": {
+    "baseline_constant": {
+      "log_loss": 1.037447761213623,
+      "brier": 0.6243608244170429,
+      "accuracy_1x2": 0.4967391304347826,
+      "ece": 0.008391759431430001
+    },
+    "baseline_elo_simple": {
+      "log_loss": 0.8171827532704831,
+      "brier": 0.4785389393153281,
+      "accuracy_1x2": 0.6228260869565218,
+      "ece": 0.03149653197134038
+    },
+    "baseline_poisson_independent": {
+      "log_loss": 0.7922051934307714,
+      "brier": 0.46388513038636237,
+      "accuracy_1x2": 0.6315217391304347,
+      "ece": 0.03130265784806345
+    },
+    "dixon_coles_full": {
+      "log_loss": 0.7919692615052699,
+      "brier": 0.4638175238614047,
+      "accuracy_1x2": 0.6304347826086957,
+      "ece": 0.029059446234023577
+    },
+    "elo_logit": {
+      "log_loss": 0.8198949047867413,
+      "brier": 0.4787515330874071,
+      "accuracy_1x2": 0.6293478260869565,
+      "ece": 0.04912229662227056
+    },
+    "gradient_boosting_calibrated": {
+      "log_loss": 0.8296617528679326,
+      "brier": 0.4814075433299207,
+      "accuracy_1x2": 0.6326086956521739,
+      "ece": 0.044554138768953394
+    },
+    "ensemble": {
+      "log_loss": 0.7914625164044087,
+      "brier": 0.46249228606433485,
+      "accuracy_1x2": 0.6347826086956522,
+      "ece": 0.04118732909693094
+    }
+  },
+  "score_metrics": {
+    "goal_mae": 0.9456413047132186,
+    "goal_rmse": 1.2684771035212312,
+    "score_top1_coverage": 0.12934782608695652,
+    "score_top3_coverage": 0.36630434782608695,
+    "score_top5_coverage": 0.5554347826086956,
+    "most_common_modal_score": "1-0",
+    "most_common_modal_share": 0.20978260869565218,
+    "modal_score_distribution_top10": {
+      "1-0": 0.20978260869565218,
+      "1-1": 0.1891304347826087,
+      "2-0": 0.17717391304347826,
+      "0-1": 0.12282608695652174,
+      "0-0": 0.09347826086956522,
+      "0-2": 0.059782608695652176,
+      "3-0": 0.05434782608695652,
+      "0-3": 0.02826086956521739,
+      "4-0": 0.02391304347826087,
+      "5-0": 0.014130434782608696
+    }
+  },
+  "acceptance_gates": {
+    "beats_constant_logloss": true,
+    "beats_elo_simple_logloss": true,
+    "beats_poisson_baseline_logloss": true,
+    "beats_constant_brier": true,
+    "ece_below_0_08": true,
+    "no_modal_collapse": true,
+    "test_sample_at_least_500": true
+  },
+  "validation_partition": {
+    "sha256": "bd6edafbdb261f1d2e31f4d1166c763188795395b4117e76068a6f4617cb79a7",
+    "rows_raw": 13988,
+    "rows_features": 13149,
+    "train_features": 10848,
+    "tune_features": 711,
+    "calibration_features": 670,
+    "test_features": 920,
+    "test_start": "2025-01-18",
+    "test_end": "2026-06-03"
+  },
+  "note": "Production models refit on all conservative public data after strict temporal validation. Validation metrics remain from untouched 2025-2026 holdout prior to refit."
+}
