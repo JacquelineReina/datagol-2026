@@ -1,10 +1,22 @@
-# DataGol 2026
+# DataGol 2026 — Versión 1 mejorada
 
-Aplicación Streamlit para estimar goles, probabilidad de victoria, empate y derrota utilizando un modelo Poisson aplicado al histórico mundialista desde 1998.
+Esta versión integra:
 
-## Archivos necesarios
-- `app.py`
-- `requirements.txt`
+- partidos internacionales desde 1998;
+- ponderación por recencia;
+- ponderación por tipo de torneo;
+- ranking Elo calculado internamente;
+- forma de los últimos 10 partidos;
+- condición de anfitrión;
+- días de descanso;
+- fase del torneo;
+- ajustes manuales por lesiones o sanciones;
+- validación histórica con margen de error y precisión 1X2.
 
-## Publicación
-Cargue ambos archivos en un repositorio público de GitHub y seleccione `app.py` como archivo principal en Streamlit Community Cloud.
+## Actualizar la aplicación publicada
+
+1. Abra su repositorio `datagol-2026` en GitHub.
+2. Reemplace `app.py` por el archivo incluido en este paquete.
+3. Mantenga o reemplace `requirements.txt`.
+4. Confirme los cambios con **Commit changes**.
+5. Streamlit actualizará automáticamente la aplicación.
