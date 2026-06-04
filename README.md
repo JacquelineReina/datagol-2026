@@ -1,25 +1,18 @@
-# DataGol 2026 — Versión 1.1
+# DataGol 2026 — Versión 1.2 calibrada
 
-Actualización del prototipo:
+Esta versión reduce el sobreajuste del prototipo mediante:
 
-- intenta descargar primero el dataset público actualizado de Kaggle;
-- conserva GitHub como respaldo;
-- muestra la fecha real del último partido disponible;
-- permite cargar un CSV suplementario de partidos recientes;
-- traduce nombres frecuentes al español;
-- activa por defecto la condición de anfitrión para México, Estados Unidos y Canadá;
-- muestra los cinco marcadores exactos más probables;
-- muestra probabilidad de al menos un gol y más de 2,5 goles;
-- mantiene Poisson + Elo interno + forma reciente + contexto.
+- suavizado empírico de ataque y defensa;
+- moderación del peso de la forma reciente;
+- suavizado del ajuste Elo;
+- menor ventaja automática del anfitrión;
+- mezcla parcial de los goles esperados con el promedio general;
+- conservación de nombres en español y top 5 de marcadores.
 
-## Actualización en GitHub
+## Actualización
 
-1. Descomprima este ZIP.
-2. En el repositorio `datagol-2026`, reemplace `app.py` y `requirements.txt`.
-3. Cargue también `partidos_recientes_plantilla.csv`.
-4. Confirme con **Commit changes**.
-5. Streamlit se actualizará automáticamente.
+Reemplace en GitHub:
+- `app.py`
+- `requirements.txt`
 
-## Uso del CSV opcional
-
-La plantilla permite agregar resultados recientes cuando la fuente automática todavía no los incluya.
+Streamlit reconstruirá la aplicación automáticamente.

@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import io
-import math
 import zipfile
 from dataclasses import dataclass
 
@@ -18,6 +17,14 @@ GITHUB_FALLBACK_URL = "https://raw.githubusercontent.com/martj42/international_r
 MAX_GOLES = 8
 FECHA_INICIO = "1998-01-01"
 ANFITRIONES_2026 = {"Mexico", "United States", "Canada"}
+
+# Calibración moderada para evitar que varios multiplicadores amplifiquen demasiado
+# las diferencias entre selecciones.
+PSEUDO_PARTIDOS = 24.0
+PESO_FORMA_RECIENTE = 0.28
+DIVISOR_ELO = 1800.0
+BONO_ANFITRION = 1.03
+MEZCLA_PROMEDIO_GENERAL = 0.24
 
 NOMBRES_ES = {
     "Ivory Coast": "Costa de Marfil",
@@ -53,15 +60,7 @@ NOMBRES_ES = {
     "Tunisia": "Túnez",
     "Egypt": "Egipto",
     "Cameroon": "Camerún",
-    "Colombia": "Colombia",
-    "Paraguay": "Paraguay",
-    "Ecuador": "Ecuador",
     "Mexico": "México",
-    "Argentina": "Argentina",
-    "Portugal": "Portugal",
-    "Uruguay": "Uruguay",
-    "Senegal": "Senegal",
-    "Australia": "Australia",
     "Canada": "Canadá",
 }
 
@@ -133,7 +132,6 @@ def normalizar(df: pd.DataFrame) -> pd.DataFrame:
 
 @st.cache_data(ttl=21600, show_spinner=False)
 def cargar_base() -> tuple[pd.DataFrame, str]:
-    # Fuente principal: Kaggle, porque su ficha se mantiene actualizada.
     try:
         respuesta = requests.get(KAGGLE_ZIP_URL, timeout=25)
         respuesta.raise_for_status()
@@ -142,7 +140,7 @@ def cargar_base() -> tuple[pd.DataFrame, str]:
             if not candidatos:
                 candidatos = [n for n in z.namelist() if n.lower().endswith(".csv")]
             if not candidatos:
-                raise ValueError("El ZIP de Kaggle no contiene CSV.")
+                raise ValueError("El ZIP no contiene CSV.")
             with z.open(candidatos[0]) as archivo:
                 df = pd.read_csv(archivo)
         return normalizar(df), "Kaggle actualizado"
@@ -153,11 +151,9 @@ def cargar_base() -> tuple[pd.DataFrame, str]:
 def combinar_suplemento(base: pd.DataFrame, archivo) -> tuple[pd.DataFrame, int]:
     if archivo is None:
         return base, 0
-    extra = pd.read_csv(archivo)
-    extra = normalizar(extra)
+    extra = normalizar(pd.read_csv(archivo))
     antes = len(base)
-    combinado = pd.concat([base, extra], ignore_index=True)
-    combinado = normalizar(combinado)
+    combinado = normalizar(pd.concat([base, extra], ignore_index=True))
     return combinado, max(0, len(combinado) - antes)
 
 def formato_largo(df: pd.DataFrame) -> pd.DataFrame:
@@ -175,7 +171,6 @@ def calcular_elos(df: pd.DataFrame) -> dict[str, float]:
         ra, rb = elo.get(a, 1500.0), elo.get(b, 1500.0)
         ventaja = 0.0 if bool(r.get("neutral", True)) else 45.0
         ea = 1.0 / (1.0 + 10 ** ((rb - (ra + ventaja)) / 400.0))
-        eb = 1.0 - ea
         ga, gb = float(r["home_score"]), float(r["away_score"])
         if ga > gb:
             sa, sb = 1.0, 0.0
@@ -187,7 +182,7 @@ def calcular_elos(df: pd.DataFrame) -> dict[str, float]:
         mult = 1.0 if dif <= 1 else 1.0 + min(dif - 1, 3) * 0.12
         k = 28.0 * float(r["peso_torneo"]) * mult
         elo[a] = ra + k * (sa - ea)
-        elo[b] = rb + k * (sb - eb)
+        elo[b] = rb + k * (sb - (1.0 - ea))
     return elo
 
 @st.cache_data(show_spinner=False)
@@ -199,18 +194,34 @@ def estadisticas(df: pd.DataFrame) -> tuple[float, pd.DataFrame]:
 
     media = max(float(np.average(largo["gf"], weights=largo["peso"])), 0.05)
     filas = []
+
     for equipo, g in largo.groupby("equipo"):
         g = g.sort_values("date")
-        gf = float(np.average(g["gf"], weights=g["peso"]))
-        gc = float(np.average(g["gc"], weights=g["peso"]))
+        pesos = g["peso"].to_numpy()
+        peso_total = float(pesos.sum())
+
+        gf_crudo = float(np.average(g["gf"], weights=pesos))
+        gc_crudo = float(np.average(g["gc"], weights=pesos))
+
+        # Suavizado empírico: evita extremos cuando el historial efectivo es limitado
+        gf = (gf_crudo * peso_total + media * PSEUDO_PARTIDOS) / (peso_total + PSEUDO_PARTIDOS)
+        gc = (gc_crudo * peso_total + media * PSEUDO_PARTIDOS) / (peso_total + PSEUDO_PARTIDOS)
+
         ult = g.tail(10)
         ult_gf = float(ult["gf"].mean())
         ult_gc = float(ult["gc"].mean())
-        forma_atq = float(np.clip((ult_gf + 0.30) / (gf + 0.30), 0.84, 1.16))
-        forma_def = float(np.clip((ult_gc + 0.30) / (gc + 0.30), 0.84, 1.16))
+
+        forma_atq_cruda = float(np.clip((ult_gf + 0.30) / (gf + 0.30), 0.84, 1.16))
+        forma_def_cruda = float(np.clip((ult_gc + 0.30) / (gc + 0.30), 0.84, 1.16))
+
+        # La forma reciente ajusta, pero no domina por completo el historial.
+        forma_atq = 1.0 + PESO_FORMA_RECIENTE * (forma_atq_cruda - 1.0)
+        forma_def = 1.0 + PESO_FORMA_RECIENTE * (forma_def_cruda - 1.0)
+
         filas.append({
             "equipo": equipo,
             "partidos": len(g),
+            "peso_efectivo": peso_total,
             "gf": gf,
             "gc": gc,
             "ult_gf": ult_gf,
@@ -221,6 +232,7 @@ def estadisticas(df: pd.DataFrame) -> tuple[float, pd.DataFrame]:
             "forma_atq": forma_atq,
             "forma_def": forma_def,
         })
+
     return media, pd.DataFrame(filas).set_index("equipo")
 
 def pars(equipo: str, tabla: pd.DataFrame, elos: dict[str, float]) -> dict:
@@ -244,31 +256,37 @@ def pars(equipo: str, tabla: pd.DataFrame, elos: dict[str, float]) -> dict:
 
 def ajustes_contexto(c: Contexto) -> tuple[float, float]:
     aa, ab = 1.0, 1.0
-    if c.anfitrion_a: aa *= 1.06
-    if c.anfitrion_b: ab *= 1.06
+    if c.anfitrion_a: aa *= BONO_ANFITRION
+    if c.anfitrion_b: ab *= BONO_ANFITRION
     dif = int(np.clip(c.descanso_a - c.descanso_b, -3, 3))
-    aa *= 1 + 0.015 * dif
-    ab *= 1 - 0.015 * dif
+    aa *= 1 + 0.01 * dif
+    ab *= 1 - 0.01 * dif
     if c.fase != "Fase de grupos":
-        aa *= 0.96
-        ab *= 0.96
+        aa *= 0.98
+        ab *= 0.98
     aa *= 1 + c.ajuste_ataque_a / 100
     ab *= 1 + c.ajuste_ataque_b / 100
     aa *= 1 + c.ajuste_defensa_b / 100
     ab *= 1 + c.ajuste_defensa_a / 100
-    return max(0.70, aa), max(0.70, ab)
+    return max(0.75, aa), max(0.75, ab)
 
 def predecir(equipo_a: str, equipo_b: str, df: pd.DataFrame, c: Contexto) -> dict:
     media, tabla = estadisticas(df)
     elos = calcular_elos(df)
     a, b = pars(equipo_a, tabla, elos), pars(equipo_b, tabla, elos)
-    elo_a = float(np.clip(np.exp((a["elo"] - b["elo"]) / 950), 0.74, 1.34))
-    elo_b = float(np.clip(np.exp((b["elo"] - a["elo"]) / 950), 0.74, 1.34))
+
+    elo_a = float(np.clip(np.exp((a["elo"] - b["elo"]) / DIVISOR_ELO), 0.84, 1.18))
+    elo_b = float(np.clip(np.exp((b["elo"] - a["elo"]) / DIVISOR_ELO), 0.84, 1.18))
     ctx_a, ctx_b = ajustes_contexto(c)
 
-    la = media * a["ataque"] * b["def_debilidad"] * a["forma_atq"] * b["forma_def"] * elo_a * ctx_a
-    lb = media * b["ataque"] * a["def_debilidad"] * b["forma_atq"] * a["forma_def"] * elo_b * ctx_b
-    la, lb = float(np.clip(la, 0.08, 4.5)), float(np.clip(lb, 0.08, 4.5))
+    la_cruda = media * a["ataque"] * b["def_debilidad"] * a["forma_atq"] * b["forma_def"] * elo_a * ctx_a
+    lb_cruda = media * b["ataque"] * a["def_debilidad"] * b["forma_atq"] * a["forma_def"] * elo_b * ctx_b
+
+    # Mezcla parcial con el promedio general: reduce sobreajuste y evita pronósticos extremos.
+    la = (1 - MEZCLA_PROMEDIO_GENERAL) * la_cruda + MEZCLA_PROMEDIO_GENERAL * media
+    lb = (1 - MEZCLA_PROMEDIO_GENERAL) * lb_cruda + MEZCLA_PROMEDIO_GENERAL * media
+
+    la, lb = float(np.clip(la, 0.12, 4.2)), float(np.clip(lb, 0.12, 4.2))
 
     goles = np.arange(MAX_GOLES + 1)
     matriz = np.outer(poisson.pmf(goles, la), poisson.pmf(goles, lb))
@@ -285,7 +303,9 @@ def predecir(equipo_a: str, equipo_b: str, df: pd.DataFrame, c: Contexto) -> dic
     escenarios = sorted(escenarios, key=lambda x: x[2], reverse=True)[:5]
 
     return {
-        "a": a, "b": b, "la": la, "lb": lb,
+        "a": a, "b": b, "media": media,
+        "la_cruda": la_cruda, "lb_cruda": lb_cruda,
+        "la": la, "lb": lb,
         "gana_a": gana_a, "empate": empate, "gana_b": gana_b,
         "escenarios": escenarios,
         "rango_a": (int(poisson.ppf(0.10, la)), int(poisson.ppf(0.90, la))),
@@ -296,7 +316,7 @@ def predecir(equipo_a: str, equipo_b: str, df: pd.DataFrame, c: Contexto) -> dic
     }
 
 st.title("⚽ DataGol 2026")
-st.subheader("Predicción explicable con Poisson, Elo y forma reciente")
+st.subheader("Predicción calibrada con Poisson, Elo y forma reciente")
 st.caption("Modelo académico probabilístico. No garantiza el marcador final.")
 
 try:
@@ -308,11 +328,7 @@ except Exception as exc:
 
 with st.sidebar:
     st.header("Actualización de datos")
-    suplemento = st.file_uploader(
-        "CSV opcional de partidos recientes",
-        type=["csv"],
-        help="Permite complementar la fuente automática con encuentros recientes.",
-    )
+    suplemento = st.file_uploader("CSV opcional de partidos recientes", type=["csv"])
 
 datos, agregados = combinar_suplemento(base, suplemento)
 fecha_max = datos["date"].max().date()
@@ -339,7 +355,6 @@ with st.sidebar:
     descanso_b = st.slider(f"Días de descanso: {visible(equipo_b)}", 2, 10, 5)
 
     with st.expander("Ajustes manuales por lesiones o sanciones"):
-        st.caption("Use valores negativos si la selección llega debilitada.")
         atq_a = st.slider(f"Ataque: {visible(equipo_a)}", -10, 10, 0, format="%d %%")
         def_a = st.slider(f"Debilidad defensiva adicional: {visible(equipo_a)}", -10, 10, 0, format="%d %%")
         atq_b = st.slider(f"Ataque: {visible(equipo_b)}", -10, 10, 0, format="%d %%")
@@ -395,7 +410,7 @@ st.dataframe(ind, hide_index=True, use_container_width=True)
 
 st.markdown("### Factores analizados")
 factores = pd.DataFrame({
-    "Indicador": ["Elo interno", "Partidos analizados", "Promedio GF", "Promedio GC", "GF últimos 10", "GC últimos 10", "Victorias últimos 10"],
+    "Indicador": ["Elo interno", "Partidos analizados", "Promedio GF suavizado", "Promedio GC suavizado", "GF últimos 10", "GC últimos 10", "Victorias últimos 10"],
     a_es: [f"{pred['a']['elo']:.0f}", pred["a"]["partidos"], f"{pred['a']['gf']:.2f}", f"{pred['a']['gc']:.2f}",
            f"{pred['a']['ult_gf']:.2f}", f"{pred['a']['ult_gc']:.2f}", pred["a"]["victorias10"]],
     b_es: [f"{pred['b']['elo']:.0f}", pred["b"]["partidos"], f"{pred['b']['gf']:.2f}", f"{pred['b']['gc']:.2f}",
@@ -403,11 +418,17 @@ factores = pd.DataFrame({
 })
 st.dataframe(factores, hide_index=True, use_container_width=True)
 
-with st.expander("¿Cómo interpretar la predicción?"):
-    st.write(
-        "DataGol calcula goles esperados con información histórica, partidos recientes, importancia del torneo, "
-        "Elo interno y contexto. Luego aplica Poisson para estimar cada marcador posible. "
-        "Dos fuentes pueden coincidir en el favorito y diferir entre 0-0, 1-0 o 2-0 porque esos marcadores pueden tener probabilidades cercanas."
+with st.expander("¿Qué cambió en esta versión?"):
+    st.markdown(
+        """
+        - Se suavizan ataque y defensa hacia el promedio general para reducir sobreajuste.
+        - La forma reciente continúa influyendo, pero con un peso moderado.
+        - El ajuste Elo se conserva, pero ya no amplifica excesivamente las diferencias.
+        - La ventaja de anfitrión se mantiene con un efecto prudente.
+        - Los goles esperados se mezclan parcialmente con el promedio general.
+
+        El objetivo no es forzar coincidencia con otra página, sino producir estimaciones más estables.
+        """
     )
 
 st.divider()
