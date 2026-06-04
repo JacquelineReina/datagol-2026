@@ -1,18 +1,42 @@
-# DataGol 2026 — Versión 1.2 calibrada
+# DataGol 2026 — Versión final con tres modelos matemáticos
 
-Esta versión reduce el sobreajuste del prototipo mediante:
+## Modelos
 
-- suavizado empírico de ataque y defensa;
-- moderación del peso de la forma reciente;
-- suavizado del ajuste Elo;
-- menor ventaja automática del anfitrión;
-- mezcla parcial de los goles esperados con el promedio general;
-- conservación de nombres en español y top 5 de marcadores.
+1. Poisson independiente para goles y marcadores exactos.
+2. Dixon-Coles para corregir resultados bajos.
+3. Regresión logística multinomial para victoria, empate y derrota.
 
-## Actualización
+## Ensamble
 
-Reemplace en GitHub:
+Los tres modelos se combinan con pesos obtenidos mediante validación temporal y Brier Score.
+
+## Qué muestra la aplicación
+
+- goles esperados;
+- victoria, empate y derrota;
+- marcador modal;
+- cinco marcadores más probables;
+- comparación de modelos;
+- margen de error;
+- Brier Score;
+- exactitud 1X2;
+- factores prepartido;
+- fuente y fecha del último partido disponible.
+
+## Actualización de GitHub
+
+Reemplace estos archivos:
 - `app.py`
 - `requirements.txt`
 
-Streamlit reconstruirá la aplicación automáticamente.
+Cargue `partidos_recientes_plantilla.csv` únicamente cuando disponga de resultados verificados.
+
+## Validación temporal estricta
+
+La versión final separa cronológicamente los datos en:
+- entrenamiento;
+- calibración;
+- prueba final independiente.
+
+El parámetro Dixon-Coles y los pesos del ensamble se seleccionan con el bloque de calibración.
+Las métricas visibles se calculan únicamente con el bloque posterior de prueba.
