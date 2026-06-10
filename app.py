@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 import pandas as pd
 import streamlit as st
-from predictor import FrozenDixonColesPredictor, load_fixtures, fixture_context
+from datagol_predictor_v2 import FrozenDixonColesPredictor, load_fixtures, fixture_context
 ROOT=Path(__file__).resolve().parent
 META=json.loads((ROOT/'models'/'production_metadata_v2.json').read_text(encoding='utf-8'))
 st.set_page_config(page_title='DataGol 2026 v2.0',page_icon='⚽',layout='wide')
