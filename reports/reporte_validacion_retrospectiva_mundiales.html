@@ -1,0 +1,221 @@
+<!doctype html><html><head><meta charset="utf-8"><title>DataGol - Validación retrospectiva de Mundiales</title><style>body{font-family:Arial,sans-serif;max-width:1280px;margin:36px auto;line-height:1.5;color:#202124}h1,h2{color:#17365d}table{border-collapse:collapse;width:100%;margin:12px 0 24px;font-size:14px}th,td{border:1px solid #ddd;padding:8px;vertical-align:top}th{background:#eef3f8}.ok{background:#e7f5e8;padding:12px;border-left:4px solid #188038}.warn{background:#fff4ce;padding:12px;border-left:4px solid #d97706}</style></head><body>
+<h1>DataGol 2026 — Validación retrospectiva específica de Mundiales</h1>
+<p><b>Objetivo:</b> evaluar el transporte del predictor a fases finales mundialistas mediante 192 partidos a 90 minutos de Brasil 2014, Rusia 2018 y Catar 2022.</p>
+<h2>1. Curación del objetivo de 90 minutos</h2><ul><li>Partidos curados: 192</li><li>Partidos con prórroga auditados explícitamente: 18</li><li>Marcadores modificados al valor reglamentario de 90 minutos: 8</li><li>Tandas de penales identificadas: 13</li></ul>
+<h2>2. Diseño retrospectivo sin fuga</h2><p>Para cada Mundial, los parámetros de los equipos se estiman exclusivamente con información anterior al inicio del torneo. La especificación matemática, hiperparámetros y pesos del ensamble permanecen congelados. Los encuentros disputados el mismo día se procesan como bloque antes de actualizar Elo y forma reciente.</p>
+<h2>3. Resultado por Mundial — Ensamble congelado</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Mundial</th>
+      <th>Partidos</th>
+      <th>Log Loss</th>
+      <th>Brier</th>
+      <th>Exactitud 1X2</th>
+      <th>ECE</th>
+      <th>Marcador exacto top-1</th>
+      <th>Marcador exacto top-5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2014</td>
+      <td>64</td>
+      <td>1.0081</td>
+      <td>0.6088</td>
+      <td>0.5312</td>
+      <td>0.0851</td>
+      <td>0.0781</td>
+      <td>0.4531</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>64</td>
+      <td>0.9456</td>
+      <td>0.5613</td>
+      <td>0.5938</td>
+      <td>0.1140</td>
+      <td>0.1094</td>
+      <td>0.5781</td>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>64</td>
+      <td>1.0139</td>
+      <td>0.5931</td>
+      <td>0.5156</td>
+      <td>0.0973</td>
+      <td>0.1250</td>
+      <td>0.4688</td>
+    </tr>
+  </tbody>
+</table>
+<h2>4. Métricas agregadas — 192 partidos</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Modelo</th>
+      <th>log_loss</th>
+      <th>brier</th>
+      <th>accuracy_1x2</th>
+      <th>ece</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>baseline_constant</td>
+      <td>1.0958</td>
+      <td>0.6668</td>
+      <td>0.4010</td>
+      <td>0.0860</td>
+    </tr>
+    <tr>
+      <td>baseline_elo_simple</td>
+      <td>1.0225</td>
+      <td>0.6129</td>
+      <td>0.5104</td>
+      <td>0.0499</td>
+    </tr>
+    <tr>
+      <td>baseline_poisson_independent</td>
+      <td>0.9926</td>
+      <td>0.5882</td>
+      <td>0.5521</td>
+      <td>0.0638</td>
+    </tr>
+    <tr>
+      <td>dixon_coles_full</td>
+      <td>0.9948</td>
+      <td>0.5897</td>
+      <td>0.5521</td>
+      <td>0.0683</td>
+    </tr>
+    <tr>
+      <td>elo_logit</td>
+      <td>1.0026</td>
+      <td>0.6001</td>
+      <td>0.5104</td>
+      <td>0.0326</td>
+    </tr>
+    <tr>
+      <td>gradient_boosting_calibrated</td>
+      <td>1.0187</td>
+      <td>0.6107</td>
+      <td>0.5260</td>
+      <td>0.0490</td>
+    </tr>
+    <tr>
+      <td>ensemble_fixed_spec</td>
+      <td>0.9892</td>
+      <td>0.5877</td>
+      <td>0.5469</td>
+      <td>0.0642</td>
+    </tr>
+  </tbody>
+</table>
+<h2>5. Marcadores exactos — Dixon-Coles</h2><ul><li>Error absoluto medio en goles: 0.918</li><li>Cobertura top-1 del marcador exacto: 10.4%</li><li>Cobertura top-3: 30.7%</li><li>Cobertura top-5: 50.0%</li></ul>
+<h2>6. Pruebas básicas de transporte</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Prueba</th>
+      <th>Cumple</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>curated_192_matches</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>extra_time_audit_18_matches</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>all_folds_have_64_matches</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ensemble_beats_constant_logloss</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ensemble_beats_constant_brier</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>ensemble_ece_below_0_12</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table><div class="ok"><b>Estado:</b> PASSED_BASIC_DOMAIN_TRANSPORT. La herramienta conserva capacidad predictiva al transportarse a Mundiales anteriores y supera claramente la frecuencia histórica.</div>
+<h2>7. Bootstrap pareado — lectura no complaciente</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>comparator</th>
+      <th>mean_delta_logloss_ensemble_minus_comparator</th>
+      <th>ci95_delta_logloss</th>
+      <th>probability_ensemble_better_logloss</th>
+      <th>mean_delta_brier_ensemble_minus_comparator</th>
+      <th>ci95_delta_brier</th>
+      <th>probability_ensemble_better_brier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>baseline_constant</td>
+      <td>-0.1066</td>
+      <td>[-0.16647126560035133, -0.043230728607380725]</td>
+      <td>0.9992</td>
+      <td>-0.0790</td>
+      <td>[-0.11800172506167426, -0.03818207698861624]</td>
+      <td>0.9998</td>
+    </tr>
+    <tr>
+      <td>baseline_elo_simple</td>
+      <td>-0.0333</td>
+      <td>[-0.0710591139249063, 0.004607033881226525]</td>
+      <td>0.9564</td>
+      <td>-0.0251</td>
+      <td>[-0.05082708774746858, 0.0008513407708551084]</td>
+      <td>0.9712</td>
+    </tr>
+    <tr>
+      <td>baseline_poisson_independent</td>
+      <td>-0.0034</td>
+      <td>[-0.012768228143643751, 0.005690436747963006]</td>
+      <td>0.7629</td>
+      <td>-0.0005</td>
+      <td>[-0.006210800371296422, 0.0050949825818391754]</td>
+      <td>0.5605</td>
+    </tr>
+    <tr>
+      <td>dixon_coles_full</td>
+      <td>-0.0056</td>
+      <td>[-0.015537738361444295, 0.003801710814710557]</td>
+      <td>0.8749</td>
+      <td>-0.0020</td>
+      <td>[-0.007559783019824469, 0.0034587578416971883]</td>
+      <td>0.7587</td>
+    </tr>
+    <tr>
+      <td>elo_logit</td>
+      <td>-0.0134</td>
+      <td>[-0.04491113511338211, 0.018540042026983377]</td>
+      <td>0.7970</td>
+      <td>-0.0124</td>
+      <td>[-0.03357292845577291, 0.008990250722592803]</td>
+      <td>0.8741</td>
+    </tr>
+    <tr>
+      <td>gradient_boosting_calibrated</td>
+      <td>-0.0295</td>
+      <td>[-0.06585795189147292, 0.007347981601114736]</td>
+      <td>0.9427</td>
+      <td>-0.0230</td>
+      <td>[-0.04724821803090231, 0.0014138042896078879]</td>
+      <td>0.9673</td>
+    </tr>
+  </tbody>
+</table>
+<div class="warn"><b>Conclusión rigurosa:</b> el ensamble supera claramente al modelo de frecuencia histórica. Frente a Poisson independiente, la mejora puntual de Log Loss es pequeña y el intervalo bootstrap del 95 % cruza cero. Por tanto, no está demostrado que el ensamble sea materialmente superior al modelo simple dentro de la muestra específica de 192 partidos mundialistas.</div>
+<h2>8. Resultado por fase</h2><ul><li>Fase de grupos: 144 partidos, Log Loss 0.974, exactitud 56.2%.</li><li>Eliminación directa: 48 partidos, Log Loss 1.036, exactitud 50.0%.</li></ul>
+<h2>9. Política recomendada de publicación</h2><p>La aplicación puede publicar probabilidades 1X2 del ensamble, pero debe mostrar la comparación con el núcleo Poisson/Dixon-Coles y evitar afirmar una superioridad significativa del ensamble. Para goles esperados y marcadores exactos, el componente explicable Poisson/Dixon-Coles sigue siendo el núcleo apropiado.</p>
+</body></html>

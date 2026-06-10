@@ -1,0 +1,23 @@
+{
+  "source_results": "https://github.com/martj42/international_results",
+  "source_openfootball": "https://github.com/openfootball/worldcup.json",
+  "world_cups_curated": [
+    2014,
+    2018,
+    2022
+  ],
+  "world_cup_matches_curated": 192,
+  "matches_per_world_cup": {
+    "2014": 64,
+    "2018": 64,
+    "2022": 64
+  },
+  "extra_time_matches_explicitly_verified": 18,
+  "extra_time_scores_changed_for_90min_target": 8,
+  "penalty_shootout_matches_flagged": 13,
+  "conservative_base_rows": 13988,
+  "augmented_base_rows": 14180,
+  "curated_csv_sha256": "a82a8d9d977b4ec2752c4765d71b8648f6f86df10a76d9ba5a69961858cf5071",
+  "augmented_base_sha256": "be798d5eceb210fa43d9a345f4176d18a900809ebc127c82e504046e4a93c53d",
+  "scientific_note": "The 192 World Cup matches are modeled at 90 minutes. For all explicitly identified extra-time matches, score.ft from openfootball/worldcup.json is used as the target and score.et is excluded."
+}

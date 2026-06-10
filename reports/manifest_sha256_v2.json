@@ -1,0 +1,78 @@
+{
+  "README.md": {
+    "sha256": "902abf637d5bfc63d41ae01398948d1c01395899c0421b48b57cf342945c8edd",
+    "bytes": 801
+  },
+  "__pycache__/predictor.cpython-313.pyc": {
+    "sha256": "68f25696d9d5e79285f33670ebd926821aae6cd9e34a3ad96a71fc5c67260edc",
+    "bytes": 7053
+  },
+  "app.py": {
+    "sha256": "e8a08d587f15c8c6d18e46cf395fa7ec4d1a0c5695c0db5e2ca9f62730c6f3b9",
+    "bytes": 4224
+  },
+  "data/worldcup_2026_group_stage.csv": {
+    "sha256": "5c8592ecff9978bbf5ae98fd97147825e40ea70eacb6cd76cdb83ec3435973a9",
+    "bytes": 4606
+  },
+  "data/worldcups_2014_2018_2022_90min_curada.csv": {
+    "sha256": "a82a8d9d977b4ec2752c4765d71b8648f6f86df10a76d9ba5a69961858cf5071",
+    "bytes": 43088
+  },
+  "models/dixon_coles_v2.json": {
+    "sha256": "6aa949f7c572ece5cf3dae16405bd1eb50669925ba2adf5d31621427cf024867",
+    "bytes": 19129
+  },
+  "models/production_metadata_v2.json": {
+    "sha256": "86d3c478ca33cd5f6dd92fcbd29a5620eb4b66252e5a1140ea1e8ab0f82fb107",
+    "bytes": 26571
+  },
+  "predictor.py": {
+    "sha256": "1e718b13d79900dddf91d3160aa824e447faddae4b48b034fd9ecce42752f9af",
+    "bytes": 2979
+  },
+  "reports/predicciones_fase_grupos_2026_v2.csv": {
+    "sha256": "6f30f99f0b0c824354995010196d7bc527ab66bb91cc8a1609bdb1712731455a",
+    "bytes": 11862
+  },
+  "reports/reporte_aceptacion_produccion_v2.html": {
+    "sha256": "7275d3fddd6e8cb98b8abf5dc606a8950777c9892de093db7de3fc237421b62a",
+    "bytes": 3620
+  },
+  "reports/reporte_validacion_general.html": {
+    "sha256": "797936081ba45ad9f21a37fba90250181c7c4bab67a8f4e91a940fb23efc596c",
+    "bytes": 4712
+  },
+  "reports/reporte_validacion_retrospectiva_mundiales.html": {
+    "sha256": "c31ce337d34deb063ebfabff5dab5aa142009c7b9e438388d4f33b90bc27af56",
+    "bytes": 7871
+  },
+  "reports/validation_results_general.json": {
+    "sha256": "0ae799d60c1101223107f234fd4622c8d956ac20dddb99f5bf6d7ce8c61ee9ad",
+    "bytes": 6922
+  },
+  "reports/worldcup_90min_curation_summary.json": {
+    "sha256": "5b0a9957d70bf847c43ce94ea0bc7be1b1622d56010010413a613a73afb2781f",
+    "bytes": 936
+  },
+  "reports/worldcup_90min_extra_time_audit.csv": {
+    "sha256": "654aabefad64fd165bc60c0a5393df6274ab9d1bc3294c749159a274b81c89f9",
+    "bytes": 5285
+  },
+  "reports/worldcup_bootstrap_comparisons.csv": {
+    "sha256": "a6fe7afffb8c5c7167f4882b38311bfcaa2516387d5830ef2fd26f3dbe49b6a2",
+    "bytes": 1255
+  },
+  "reports/worldcup_bootstrap_diagnostics.json": {
+    "sha256": "d96b6a5242321473b0569e39aab3558902c0be56e61562660634c6088cbe65cd",
+    "bytes": 3044
+  },
+  "reports/worldcup_retrospective_metrics.csv": {
+    "sha256": "bfe46422c7a412912fdcbe08a32d341229570fbe1b4dc6a5af13ba469730a962",
+    "bytes": 2703
+  },
+  "requirements.txt": {
+    "sha256": "06b49bd06464ed9f5e2a9a148eb09df2db83b06e8b168a8f4f3c981d222ebf84",
+    "bytes": 52
+  }
+}
